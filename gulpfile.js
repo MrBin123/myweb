@@ -17,6 +17,11 @@ gulp.task('copyhtml', function () {
   gulp.src('./car/*.html')
     .pipe(gulp.dest('./build/'))
 })
+//拷贝js/lib下面的js到build下
+gulp.task('copyjs', function () {
+  gulp.src('./car/js/lib/zepto.min.js')
+    .pipe(gulp.dest('./build/js'))
+})
 
 // 启动一个webserver服务
 gulp.task('webserver', function () {
@@ -37,7 +42,7 @@ gulp.task('webserver', function () {
 // 打包js
 gulp.task('packjs', function () {
   gulp.src(
-    './car/js/index.js'
+    ['./car/js/index.js']
   )
     .pipe(named())
     .pipe(webpack({
@@ -85,6 +90,7 @@ gulp.task('copylibs', function () {
 // 监测文件变化
 gulp.task('watch', function () {
   gulp.watch('./car/*.html', ['copyhtml'])
+  gulp.watch('./car/js/lib/*.js', ['copyjs'])
   gulp.watch('./car/js/**/*.js', ['packjs'])
   gulp.watch('./car/js/**/*.string', ['packjs'])
   gulp.watch('./car/css/**/*.scss', ['packcss'])
