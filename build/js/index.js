@@ -60,13 +60,48 @@
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 
 
+	var app = __webpack_require__(3);
+	var homeAdv = __webpack_require__(4);
+	var homeTop = __webpack_require__(5);
+	var homeCenter = __webpack_require__(6);
+	var homeBottom = __webpack_require__(7);
 
 
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+	module.exports = "  <div class=\"home\">  	  <div class=\"top\"></div>  	  <div class=\"center\"></div>  	  <div class=\"bottom\"></div>  </div>"
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+	module.exports = ""
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+	module.exports = "<div id=\"home_top\">	<span id=\"user\"></span>		<div id=\"search\">			<span>关键词</span>			<span></span>			<span>名称/型号/品牌/车型</span>			<span></span>		</div>	<span id=\"info\"></span></div>"
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+	module.exports = "<div id=\"home_bottom\"></div>"
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+	module.exports = "<div id=\"home_center\">							</div>"
 
 /***/ })
 /******/ ]);
