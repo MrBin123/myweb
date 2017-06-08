@@ -70,6 +70,10 @@
 	var homeTop = __webpack_require__(5);
 	var homeCenter = __webpack_require__(6);
 	var homeBottom = __webpack_require__(7);
+	var commonUtil = __webpack_require__(8)
+
+	commonUtil.renderBody(app);
+	commonUtil.render("#top",homeTop)
 
 
 
@@ -77,7 +81,7 @@
 /* 3 */
 /***/ (function(module, exports) {
 
-	module.exports = "  <div class=\"home\">  	  <div class=\"top\"></div>  	  <div class=\"center\"></div>  	  <div class=\"bottom\"></div>  </div>"
+	module.exports = "  <div id=\"home\">  	  <div id=\"top\"></div>  	  <div id=\"center\"></div>  	  <div id=\"bottom\"></div>  </div>"
 
 /***/ }),
 /* 4 */
@@ -89,7 +93,7 @@
 /* 5 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div id=\"home_top\">	<span id=\"user\"></span>		<div id=\"search\">			<span>关键词</span>			<span></span>			<span>名称/型号/品牌/车型</span>			<span></span>		</div>	<span id=\"info\"></span></div>"
+	module.exports = "	<span id=\"user\"></span>		<div id=\"search\">			<span>关键词</span>			<span></span>			<span>名称/型号/品牌/车型</span>			<span></span>		</div>	<span id=\"info\"></span>"
 
 /***/ }),
 /* 6 */
@@ -102,6 +106,32 @@
 /***/ (function(module, exports) {
 
 	module.exports = "<div id=\"home_center\">							</div>"
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+	/*** IMPORTS FROM imports-loader ***/
+
+
+	var common = {
+	  renderBody: function (tpl) {
+	//  var body = document.body
+	//  body.innerHTML = tpl + body.innerHTML
+			$('body').html(tpl);
+	  },
+	  render: function (obj, tpl) {
+	//  obj.innerHTML = tpl
+			$(obj).html(tpl);
+			console.log($(obj));
+			console.log(tpl);
+
+	  }
+	}
+
+	module.exports = common
+
+
 
 /***/ })
 /******/ ]);
