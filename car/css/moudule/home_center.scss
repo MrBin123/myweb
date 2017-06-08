@@ -1,0 +1,20 @@
+#center #big_banner img{
+    height: 1.62rem;
+    width: 100%;
+}
+#center #sel{
+    width: 100%;
+    @include align-content:(center);
+    height: 1.6rem;
+}
+#center #sel li{
+     @include flex-direction();
+     @include flex(1);
+     height: .8rem;
+     @include align-items(center);
+}
+#center #sel li a{
+    display: block;
+    width: .4rem;
+    height: .4rem;
+}
