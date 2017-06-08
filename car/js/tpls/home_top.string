@@ -1,4 +1,4 @@
-<div id="home_top">
+
 	<span id="user"></span>
 		<div id="search">
 			<span>关键词</span>
@@ -7,4 +7,3 @@
 			<span></span>
 		</div>
 	<span id="info"></span>
-</div>

@@ -1,5 +1,5 @@
-  <div class="home">
-  	  <div class="top"></div>
-  	  <div class="center"></div>
-  	  <div class="bottom"></div>
+  <div id="home">
+  	  <div id="top"></div>
+  	  <div id="center"></div>
+  	  <div id="bottom"></div>
   </div>
