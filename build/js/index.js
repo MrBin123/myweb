@@ -74,7 +74,8 @@
 
 	commonUtil.renderBody(app);
 	commonUtil.render("#top",homeTop)
-	 
+	commonUtil.render("#center",homeCenter)
+	commonUtil.render("#bottom",homeBottom)
 
 
 /***/ }),
@@ -93,19 +94,19 @@
 /* 5 */
 /***/ (function(module, exports) {
 
-	module.exports = "	<span id=\"user\" class=\"yofont\">&#xe60f;</span>		<div id=\"search\">			<span>关键词</span>			<span class=\"yofont\">&#xe67c;</span>			<span >名称/型号/品牌/车型</span>			<span class=\"yofont\">&#xe601;</span>		</div>	<span id=\"info\" class=\"yofont\">&#xe649;</span>"
+	module.exports = "	<span id=\"user\" class=\"yofont\">&#xe60f;</span>		<div id=\"search\">			<span>关键词</span>			<span class=\"yofont\" id=\"down\">&#xe67c;</span>			<span >名称/型号/品牌/车型</span>			<span class=\"yofont\" id=\"se\">&#xe611;</span>		</div>	<span id=\"info\" class=\"yofont\">&#xe649;</span>"
 
 /***/ }),
 /* 6 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div id=\"home_bottom\"></div>"
+	module.exports = "<div id=\"big_banner\">	<img src=\"http://adimage1.autozi.com//banner/1704071632075961/images/163207302_161872034.jpg\"></div><ul id=\"sel\">	<li>		<a class=\"frm-a-block\" href=\"###\">			<img class=\"frm-icon-block\" src=\"http://image.autozi.com//b2cMobile/mbItem0/1504132000250018-img.png\">			<p>雨刮片</p> 		</a>	</li>	<li>		<a class=\"frm-a-block\" href=\"###\">			<img class=\"frm-icon-block\" src=\"http://image.autozi.com//b2cMobile/mbItem0/1504132000250018-img.png\">			<p>雨刮片</p> 		</a>	</li></ul>"
 
 /***/ }),
 /* 7 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div id=\"home_center\">							</div>"
+	module.exports = "	<ul >		<li>			<p class=\"yofont yofont1\">&#xe635;</p>			<p class=\"wenzi\">首页</p>		</li>		<li>			<p class=\"yofont\">&#xe714;</p>			<p class=\"wenzi\">查找</p>		</li>		<li>			<p class=\"yofont\">&#xe63b;</p>			<p class=\"wenzi\">发现</p>		</li>		<li>			<p class=\"yofont\">&#xe790;</p>			<p class=\"wenzi\">购物车</p>		</li>		<li>			<p class=\"yofont\">&#xe60f;</p>			<p class=\"wenzi\">我的</p>		</li>		</ul>			"
 
 /***/ }),
 /* 8 */

@@ -1,1 +1,18 @@
-<div id="home_bottom"></div>
+<div id="big_banner">
+	<img src="http://adimage1.autozi.com//banner/1704071632075961/images/163207302_161872034.jpg">
+</div>
+<ul id="sel">
+	<li>
+		<a class="frm-a-block" href="###">
+			<img class="frm-icon-block" src="http://image.autozi.com//b2cMobile/mbItem0/1504132000250018-img.png">
+			<p>雨刮片</p> 
+		</a>
+	</li>
+	<li>
+		<a class="frm-a-block" href="###">
+			<img class="frm-icon-block" src="http://image.autozi.com//b2cMobile/mbItem0/1504132000250018-img.png">
+			<p>雨刮片</p> 
+		</a>
+	</li>
+
+</ul>

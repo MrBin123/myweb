@@ -1,3 +1,23 @@
-<div id="home_center">
-				
-			</div>
+	<ul >
+		<li>
+			<p class="yofont yofont1">&#xe635;</p>
+			<p class="wenzi">首页</p>
+		</li>
+		<li>
+			<p class="yofont">&#xe714;</p>
+			<p class="wenzi">查找</p>
+		</li>
+		<li>
+			<p class="yofont">&#xe63b;</p>
+			<p class="wenzi">发现</p>
+		</li>
+		<li>
+			<p class="yofont">&#xe790;</p>
+			<p class="wenzi">购物车</p>
+		</li>
+		<li>
+			<p class="yofont">&#xe60f;</p>
+			<p class="wenzi">我的</p>
+		</li>
+	
+	</ul>			

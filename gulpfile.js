@@ -68,9 +68,9 @@ gulp.task('packjs', function () {
 
 // 打包 scss
 gulp.task('packcss', function () {
-  gulp.src([
+gulp.src([
     './car/css/index.scss'
-  ])
+])
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./build/css'))
 })
