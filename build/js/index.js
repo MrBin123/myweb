@@ -74,7 +74,7 @@
 
 	commonUtil.renderBody(app);
 	commonUtil.render("#top",homeTop)
-
+	 
 
 
 /***/ }),
@@ -93,7 +93,7 @@
 /* 5 */
 /***/ (function(module, exports) {
 
-	module.exports = "	<span id=\"user\" class=\"yofont\">&#xe60f;</span>		<div id=\"search\">			<span>关键词</span>			<span class=\"yofont\">&#xe67c;</span>			<span >名称/型号/品牌/车型</span>			<span class=\"yofont\">&#xe601;</span>		</div>	<span id=\"info\" class=\"yofont\">&#xe601;</span>"
+	module.exports = "	<span id=\"user\" class=\"yofont\">&#xe60f;</span>		<div id=\"search\">			<span>关键词</span>			<span class=\"yofont\">&#xe67c;</span>			<span >名称/型号/品牌/车型</span>			<span class=\"yofont\">&#xe601;</span>		</div>	<span id=\"info\" class=\"yofont\">&#xe649;</span>"
 
 /***/ }),
 /* 6 */
