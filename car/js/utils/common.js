@@ -7,8 +7,8 @@ var common = {
   render: function (obj, tpl) {
 //  obj.innerHTML = tpl
 		$(obj).html(tpl);
-		console.log($(obj));
-		console.log(tpl);
+//		console.log($(obj));
+//		console.log(tpl);
 
   }
 }
