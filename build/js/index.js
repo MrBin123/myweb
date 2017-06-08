@@ -74,7 +74,7 @@
 
 	commonUtil.renderBody(app);
 	commonUtil.render("#top",homeTop)
-
+	 
 
 
 /***/ }),
@@ -93,7 +93,7 @@
 /* 5 */
 /***/ (function(module, exports) {
 
-	module.exports = "	<span id=\"user\"></span>		<div id=\"search\">			<span>关键词</span>			<span></span>			<span>名称/型号/品牌/车型</span>			<span></span>		</div>	<span id=\"info\"></span>"
+	module.exports = "	<span id=\"user\" class=\"yofont\">&#xe60f;</span>		<div id=\"search\">			<span>关键词</span>			<span class=\"yofont\">&#xe67c;</span>			<span >名称/型号/品牌/车型</span>			<span class=\"yofont\">&#xe601;</span>		</div>	<span id=\"info\" class=\"yofont\">&#xe649;</span>"
 
 /***/ }),
 /* 6 */
@@ -123,8 +123,8 @@
 	  render: function (obj, tpl) {
 	//  obj.innerHTML = tpl
 			$(obj).html(tpl);
-			console.log($(obj));
-			console.log(tpl);
+	//		console.log($(obj));
+	//		console.log(tpl);
 
 	  }
 	}

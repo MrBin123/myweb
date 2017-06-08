@@ -7,3 +7,4 @@ var commonUtil = require('../utils/common')
 
 commonUtil.renderBody(app);
 commonUtil.render("#top",homeTop)
+ 

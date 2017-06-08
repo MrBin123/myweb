@@ -77,28 +77,40 @@ gulp.task('packcss', function () {
 
 // copy images
 gulp.task('copyimage', function () {
-  gulp.src('./car/imgs/*')
+  	gulp.src('./car/imgs/**/*')
     .pipe(gulp.dest('./build/imgs'))
 })
 
 // copy libs
 gulp.task('copylibs', function () {
   gulp.src('./car/css/lib/**/*')
-    .pipe(gulp.dest('./build/libs'))
+    .pipe(gulp.dest('./build/css/libs'))
+})
+// copy usage
+gulp.task('copyusage', function () {
+  gulp.src('./car/css/usage/**/*')
+    .pipe(gulp.dest('./build/css/usage'))
+})
+// copy fonts
+gulp.task('copyfonts', function () {
+  gulp.src('./car/css/fonts/*')
+    .pipe(gulp.dest('./build/css/fonts'))
 })
 
 // 监测文件变化
 gulp.task('watch', function () {
-  gulp.watch('./car/*.html', ['copyhtml'])
-  gulp.watch('./car/js/lib/*.js', ['copyjs'])
+	gulp.watch('./car/*.html', ['copyhtml'])
+	gulp.watch('./car/css/fonts/*', ['copyfonts'])
+	gulp.watch('./car/js/lib/*.js', ['copyjs'])
   gulp.watch('./car/js/**/*.js', ['packjs'])
   gulp.watch('./car/js/**/*.string', ['packjs'])
   gulp.watch('./car/css/**/*.scss', ['packcss'])
-  gulp.watch('./car/imgs/*', ['copyimage'])
-  gulp.watch('./car/css/libs/**/*', ['copylibs'])
+	gulp.watch('./car/imgs/**/*', ['copyimage'])
+	gulp.watch('./car/css/usage/**/*', ['copylibs'])
+	gulp.watch('./car/css/libs/**/*', ['copyusage'])
 })
 
 // 定义默认任务
-gulp.task('default', ['copyhtml', 'watch', 'webserver'], function () {
+gulp.task('default', ['copyhtml','copyfonts','copylibs','copyjs','copyusage','copyimage' ,'watch', 'webserver'], function () {
   console.log('done.')
 })
