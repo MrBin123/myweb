@@ -710,7 +710,7 @@ a {
 
 @font-face {
   font-family: 'yofont';
-  src: url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"); }
+  src: url("/css/fonts/iconfont.woff") format("woff"), url("/css/fonts/iconfont.ttf") format("truetype"); }
 
 .yofont {
   font-family: "yofont" !important;
