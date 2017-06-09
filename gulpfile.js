@@ -28,7 +28,7 @@ gulp.task('webserver', function () {
   gulp.src('./build')
     .pipe(
       webserver({
-        host: '10.9.166.191',
+        host: 'localhost',
         port: 8020,
         directoryListing: {
           enable: true,
