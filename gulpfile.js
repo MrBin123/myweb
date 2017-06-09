@@ -16,6 +16,8 @@ var sass = require('gulp-sass')
 gulp.task('copyhtml', function () {
   gulp.src('./car/*.html')
     .pipe(gulp.dest('./build/'))
+    
+    
 })
 //拷贝js/lib下面的js到build下
 gulp.task('copyjs', function () {
