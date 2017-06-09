@@ -744,7 +744,8 @@ a {
   line-height: .4rem;
   -webkit-box-align: center;
   -webkit-align-items: center;
-  align-items: center; }
+  align-items: center;
+  z-index: 999; }
 
 #center {
   -webkit-box-flex: 1;
@@ -752,7 +753,8 @@ a {
   flex: 1;
   width: .1px;
   width: 100%;
-  background: blue; }
+  overflow-y: scroll;
+  background: #efefef; }
 
 #bottom {
   height: .5rem;
@@ -790,7 +792,8 @@ a {
 
 #top #down {
   font-size: .12rem;
-  margin: 0 .06rem; }
+  margin: 0 .06rem;
+  color: #666; }
 
 #top #se {
   font-size: .19rem;
@@ -812,13 +815,458 @@ a {
   width: 100%; }
 
 #center #sel {
-  width: 100%; }
+  padding-top: .1rem;
+  width: 100%;
+  height: 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-content: center;
+  align-content: center;
+  text-align: center;
+  position: relative;
+  background: #fff; }
+  #center #sel::after {
+    pointer-events: none;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    content: "\0020";
+    border-color: #dcdcdc;
+    border-style: solid;
+    border-width: 0 0 0.01rem 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+    @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+      #center #sel::after {
+        width: 100%;
+        height: 100%; } }
+    @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+      #center #sel::after {
+        width: 200%;
+        height: 200%;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5); } }
+    @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+      #center #sel::after {
+        width: 300%;
+        height: 300%;
+        -webkit-transform: scale(0.33333);
+        transform: scale(0.33333); } }
 
 #center #sel li {
+  width: 25%;
+  height: .8rem;
+  padding: .05rem 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+#center #sel li a {
+  font-size: .12rem;
+  color: #666; }
+
+#center #sel li img {
+  width: .45rem;
+  height: .45rem; }
+
+#center .show {
+  width: 100%; }
+
+#center .show img {
+  height: .4rem;
+  width: 100%; }
+
+#center .go {
+  display: block;
+  width: 100%;
+  margin-top: .1rem;
+  padding-bottom: .1rem;
+  background: #fff; }
+
+#center .go img {
+  height: .64rem;
+  width: 100%; }
+
+#center .jingpin {
+  width: 100%;
+  height: .4rem;
+  background: #fff;
+  line-height: .4rem;
+  margin: .1rem 0;
+  position: relative; }
+  #center .jingpin::after {
+    pointer-events: none;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    content: "\0020";
+    border-color: #dcdcdc;
+    border-style: solid;
+    border-width: 0 0 0.01rem 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+    @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+      #center .jingpin::after {
+        width: 100%;
+        height: 100%; } }
+    @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+      #center .jingpin::after {
+        width: 200%;
+        height: 200%;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5); } }
+    @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+      #center .jingpin::after {
+        width: 300%;
+        height: 300%;
+        -webkit-transform: scale(0.33333);
+        transform: scale(0.33333); } }
+
+#center .jingpin p {
+  color: #ff713f;
+  font-size: .15rem;
+  margin: 0 .15rem; }
+
+#center .hot {
+  width: 100%;
+  height: 1.12rem;
+  background: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+
+#center .hot .hot_title {
+  width: 100%;
+  height: .4rem;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  line-height: .4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex; }
+
+#center .hot .hot_title p {
+  color: #ff713f;
+  width: 80%;
+  font-size: .15rem;
+  margin: 0 .15rem; }
+
+#center .hot .hot_title a {
+  color: #666;
+  font-size: .15rem;
+  width: 20%; }
+
+#center .hot ul {
+  width: 100%;
+  height: .92rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  position: relative;
+  background: #fff; }
+  #center .hot ul::after {
+    pointer-events: none;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    content: "\0020";
+    border-color: #dcdcdc;
+    border-style: solid;
+    border-width: 0.01rem 0 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+    @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+      #center .hot ul::after {
+        width: 100%;
+        height: 100%; } }
+    @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+      #center .hot ul::after {
+        width: 200%;
+        height: 200%;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5); } }
+    @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+      #center .hot ul::after {
+        width: 300%;
+        height: 300%;
+        -webkit-transform: scale(0.33333);
+        transform: scale(0.33333); } }
+
+#center .hot ul li {
+  width: 25%;
+  height: .46rem;
+  line-height: .46rem;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  text-align: center;
+  position: relative; }
+  #center .hot ul li::after {
+    pointer-events: none;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    content: "\0020";
+    border-color: #dcdcdc;
+    border-style: solid;
+    border-width: 0 0.01rem 0.01rem 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+    @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+      #center .hot ul li::after {
+        width: 100%;
+        height: 100%; } }
+    @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+      #center .hot ul li::after {
+        width: 200%;
+        height: 200%;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5); } }
+    @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+      #center .hot ul li::after {
+        width: 300%;
+        height: 300%;
+        -webkit-transform: scale(0.33333);
+        transform: scale(0.33333); } }
+
+#center .hot ul li img {
+  width: .6rem;
+  height: .24rem; }
+
+#center .hot ul li:nth-child(4) {
+  position: relative; }
+  #center .hot ul li:nth-child(4)::after {
+    pointer-events: none;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    content: "\0020";
+    border-color: #dcdcdc;
+    border-style: solid;
+    border-width: 0 0 0.01rem 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+    @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+      #center .hot ul li:nth-child(4)::after {
+        width: 100%;
+        height: 100%; } }
+    @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+      #center .hot ul li:nth-child(4)::after {
+        width: 200%;
+        height: 200%;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5); } }
+    @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+      #center .hot ul li:nth-child(4)::after {
+        width: 300%;
+        height: 300%;
+        -webkit-transform: scale(0.33333);
+        transform: scale(0.33333); } }
+
+#center .hot ul li:nth-child(5) {
+  position: relative; }
+  #center .hot ul li:nth-child(5)::after {
+    pointer-events: none;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    content: "\0020";
+    border-color: #dcdcdc;
+    border-style: solid;
+    border-width: 0 0.01rem 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+    @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+      #center .hot ul li:nth-child(5)::after {
+        width: 100%;
+        height: 100%; } }
+    @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+      #center .hot ul li:nth-child(5)::after {
+        width: 200%;
+        height: 200%;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5); } }
+    @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+      #center .hot ul li:nth-child(5)::after {
+        width: 300%;
+        height: 300%;
+        -webkit-transform: scale(0.33333);
+        transform: scale(0.33333); } }
+
+#center .hot ul li:nth-child(6) {
+  position: relative; }
+  #center .hot ul li:nth-child(6)::after {
+    pointer-events: none;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    content: "\0020";
+    border-color: #dcdcdc;
+    border-style: solid;
+    border-width: 0 0.01rem 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+    @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+      #center .hot ul li:nth-child(6)::after {
+        width: 100%;
+        height: 100%; } }
+    @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+      #center .hot ul li:nth-child(6)::after {
+        width: 200%;
+        height: 200%;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5); } }
+    @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+      #center .hot ul li:nth-child(6)::after {
+        width: 300%;
+        height: 300%;
+        -webkit-transform: scale(0.33333);
+        transform: scale(0.33333); } }
+
+#center .hot ul li:nth-child(7) {
+  position: relative; }
+  #center .hot ul li:nth-child(7)::after {
+    pointer-events: none;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    content: "\0020";
+    border-color: #dcdcdc;
+    border-style: solid;
+    border-width: 0 0.01rem 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+    @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+      #center .hot ul li:nth-child(7)::after {
+        width: 100%;
+        height: 100%; } }
+    @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+      #center .hot ul li:nth-child(7)::after {
+        width: 200%;
+        height: 200%;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5); } }
+    @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+      #center .hot ul li:nth-child(7)::after {
+        width: 300%;
+        height: 300%;
+        -webkit-transform: scale(0.33333);
+        transform: scale(0.33333); } }
+
+#center .hot ul li:nth-child(8) {
+  position: relative; }
+  #center .hot ul li:nth-child(8)::after {
+    pointer-events: none;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    content: "\0020";
+    border-color: #dcdcdc;
+    border-style: solid;
+    border-width: 0 0.01rem 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+    @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+      #center .hot ul li:nth-child(8)::after {
+        width: 100%;
+        height: 100%; } }
+    @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+      #center .hot ul li:nth-child(8)::after {
+        width: 200%;
+        height: 200%;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5); } }
+    @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+      #center .hot ul li:nth-child(8)::after {
+        width: 300%;
+        height: 300%;
+        -webkit-transform: scale(0.33333);
+        transform: scale(0.33333); } }
+
+#center .hot ul li:nth-child(8) {
+  position: relative; }
+  #center .hot ul li:nth-child(8)::after {
+    pointer-events: none;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    content: "\0020";
+    border-color: #dcdcdc;
+    border-style: solid;
+    border-width: 0 0 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+    @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+      #center .hot ul li:nth-child(8)::after {
+        width: 100%;
+        height: 100%; } }
+    @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+      #center .hot ul li:nth-child(8)::after {
+        width: 200%;
+        height: 200%;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5); } }
+    @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+      #center .hot ul li:nth-child(8)::after {
+        width: 300%;
+        height: 300%;
+        -webkit-transform: scale(0.33333);
+        transform: scale(0.33333); } }
+
+#center .line {
+  height: .2rem;
+  color: #8f8f94;
+  font-size: .14rem;
+  text-align: center;
+  line-height: .2rem;
+  margin-top: .4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+#center .line .line1 {
+  width: 30%;
+  height: .01rem;
+  background: #c9c9c9;
+  margin-top: .1rem; }
+
+#center .line .line2 {
+  margin: 0 .1rem; }
 
 #bottom ul {
   display: -webkit-box;

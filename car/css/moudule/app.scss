@@ -18,12 +18,13 @@ $base-color:#fff;
     top:0;
     line-height: .4rem;
      @include align-items(center);
+     z-index: 999;
  }
 #center{
     @include flex(1);
     width: 100%;
-    background: blue;
-    overflow: hidden;
+    overflow-y: scroll;
+    background: #efefef;
 } 
 #bottom{
     height: .5rem;

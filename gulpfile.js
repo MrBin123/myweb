@@ -16,8 +16,6 @@ var sass = require('gulp-sass')
 gulp.task('copyhtml', function () {
   gulp.src('./car/*.html')
     .pipe(gulp.dest('./build/'))
-    
-    
 })
 //拷贝js/lib下面的js到build下
 gulp.task('copyjs', function () {
@@ -31,7 +29,7 @@ gulp.task('webserver', function () {
     .pipe(
       webserver({
         host: 'localhost',
-        port: 8020,
+        port: 8040,
         directoryListing: {
           enable: true,
           path: './build'
@@ -116,3 +114,4 @@ gulp.task('watch', function () {
 gulp.task('default', ['copyhtml','copyfonts','copylibs','copyjs','copyusage','copyimage' ,'watch', 'webserver'], function () {
   console.log('done.')
 })
+
