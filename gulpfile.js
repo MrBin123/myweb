@@ -24,7 +24,7 @@ gulp.task('copyjs', function () {
 })
 
 // 启动一个webserver服务
-gulp.task('webserver', function () {
+gulp.task('webserver', function () { 
   gulp.src('./build')
     .pipe(
       webserver({
