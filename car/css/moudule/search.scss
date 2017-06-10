@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+$base-color:#fff;
+#search{
+   height: 100%;
+   width: 100%;
+   @include flexbox();
+   @include flex-direction(column);
+   background: #efefef;
+   position: relative;
+}
+
+
+#search_top{
+    height: .44rem;
+    background: $base-color;
+}
+#search_center{
+
+    overflow-y: scroll;
+    background: #efefef;
+//  margin-top: .1rem;
+}
