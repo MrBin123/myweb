@@ -148,3 +148,118 @@
 #center .line .line2{
     margin: 0 .1rem;
 }
+
+
+#center .goods{
+    margin-top: .2rem;
+    width: 100%;
+    @include flexbox()
+    @include flex-flow(row wrap);
+    padding:0 .05rem;
+}
+#center .goods li{
+    width: 46%;
+//  height: 2.13rem;
+//  line-height: 2.13rem;
+    @include flex-direction(column);
+    background: $base-color;
+    text-align: center;
+    margin-left:.08rem;
+    margin-top: .05rem;
+    padding: .05rem;
+}
+#center .goods li img{
+    width: 1rem;
+    height: 1rem;
+
+}
+#center .goods li .content{
+    width: 100%;
+    height: .38rem;
+    color: #343434;
+    @include ellipsis(null,2);
+    overflow: hidden;
+    font-size: .12rem;
+    text-align: left;
+}
+#center .goods li .rexiao{
+    color: #ff7e2c;
+    font-size: .16rem;
+    font-weight: bold;
+    @include border(.01rem 0 0 0,#dcdcdc);
+    margin-top: .04rem;
+    padding-top: .04rem;
+}
+
+.foot{
+    background: $base-color;
+    width: 100%;
+}
+.foot .logins{
+    height: .42rem;
+    @include flexbox();
+    @include flex-direction();
+    line-height: .42rem;
+    margin-top: .4rem;
+    @include align-items(center);
+}
+.foot .logins li{
+    width: 25%;
+    text-align: center;
+}
+.foot .logins li a{
+    font-size: .12rem;
+    color: #666;
+    height: .12rem;
+    width: 100%;
+}
+.foot .logins  .col{
+    display: block;
+    width: .01rem;
+    height: .12rem;
+    background:  #dcdcdc;
+}
+.foot .download{
+    @include flexbox();
+    @include flex-direction();
+    height: .54rem;
+   
+}
+.foot .download li{
+    color: #8F8F94;
+    width: 33%;
+    height: .54rem;
+    text-align: center;
+}
+.foot .download li a{
+    color: #8F8F94;
+}
+.foot .download img:nth-child(1){
+    width: .26rem;
+    height: .29rem;
+   
+}
+.foot .download img:nth-child(2){
+    width: .33rem;
+    height: .33rem;
+}
+.foot .download .one{
+    margin: 0 auto;
+    height: .36rem;
+    width: .36rem;
+    line-height: .36rem;
+    text-align: center;
+    @include border(.01rem,#8f8f94,solid,50%)
+}
+.foot .download .one1{
+    color: #252525;
+}
+.foot .download .one2{
+    @include border(.01rem,#252525,solid,50%)
+}
+.foot .copyright{
+    text-align: center;
+    font-size: .12rem;
+    color: #8f8f94;
+    margin-top: .2rem;
+}
