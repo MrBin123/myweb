@@ -30,6 +30,7 @@ gulp.task('webserver', function () {
       webserver({
         host: 'localhost',
         port: 8040,
+
         directoryListing: {
           enable: true,
           path: './build'
