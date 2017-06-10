@@ -1466,7 +1466,7 @@ a {
     content: "\0020";
     border-color: #252525;
     border-style: solid;
-    border-width: 0.01rem;
+    border-width: 0.02rem;
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0; }
     @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
