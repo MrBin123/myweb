@@ -42,7 +42,9 @@ gulp.task('webserver', function () {
 // 打包js
 gulp.task('packjs', function () {
   gulp.src(
-    ['./car/js/index.js']
+    ['./car/js/*.js',
+    './car/js/Me.js'
+    ]
   )
     .pipe(named())
     .pipe(webpack({
@@ -69,7 +71,8 @@ gulp.task('packjs', function () {
 // 打包 scss
 gulp.task('packcss', function () {
 gulp.src([
-    './car/css/index.scss'
+    './car/css/*.scss',
+    './car/css/Me.scss'
 ])
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./build/css'))
