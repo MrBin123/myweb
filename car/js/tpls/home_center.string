@@ -145,9 +145,38 @@
 </ul>
 <div class="foot">
 	<ul class="logins">
-		<li><a href="###">登陆</a></li>
-		<li><a href="###">注册</a></li>
-		<li><a href="###">反馈</a></li>
+		<li><a href="###">登陆</a></li><span class="col"></span>
+		<li><a href="###">注册</a></li><span class="col"></span>
+		<li><a href="###">反馈</a></li><span class="col"></span>
 		<li><a href="###">回到顶部</a></li>
 	</ul>
+	<ul class="download">
+		<li>
+			<p class="one">
+				<a href="###">
+				APP
+				</a>
+			</p>
+			<p>客户端</p>
+		</li>
+		<li>
+			<p class="one one2">
+				<a href="###">
+					<img src="http://style1.autozi.com/msite/images/common/iconfont-shouji.png?version=20170606184002"/>
+				</a>
+			</p>
+			
+			<p class="one1">触屏版</p>
+		</li>
+		<li>
+			<p class="one">
+				<a href="###">
+					<img src="http://style1.autozi.com/msite/images/common/iconfont-diannao.png?version=20170606184002"/>
+				</a>
+			</p>
+			
+			<p>电脑版</p>
+		</li>
+	</ul>
+	<p class="copyright">Copyright &copy; Autozi.com 2017 版权所有</p>
 </div>

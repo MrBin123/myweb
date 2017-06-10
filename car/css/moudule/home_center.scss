@@ -201,6 +201,7 @@
     @include flex-direction();
     line-height: .42rem;
     margin-top: .4rem;
+    @include align-items(center);
 }
 .foot .logins li{
     width: 25%;
@@ -209,18 +210,56 @@
 .foot .logins li a{
     font-size: .12rem;
     color: #666;
-    display: block;
-    height: 12px;
+    height: .12rem;
     width: 100%;
 }
-.foot .logins li ::after{
-    content: "";
-    border: 1px solid red;
-    margin-left: 25%;
+.foot .logins  .col{
+    display: block;
+    width: .01rem;
+    height: .12rem;
+    background:  #dcdcdc;
 }
-//.foot .logins li:nth-child(2){
-//  @include border(0 .01rem 0 0,#dcdcdc);
-//}
-//.foot .logins li:nth-child(3){
-//  @include border(0 .01rem 0 0,#dcdcdc);
-//}
+.foot .download{
+    @include flexbox();
+    @include flex-direction();
+    height: .54rem;
+   
+}
+.foot .download li{
+    color: #8F8F94;
+    width: 33%;
+    height: .54rem;
+    text-align: center;
+}
+.foot .download li a{
+    color: #8F8F94;
+}
+.foot .download img:nth-child(1){
+    width: .26rem;
+    height: .29rem;
+   
+}
+.foot .download img:nth-child(2){
+    width: .33rem;
+    height: .33rem;
+}
+.foot .download .one{
+    margin: 0 auto;
+    height: .36rem;
+    width: .36rem;
+    line-height: .36rem;
+    text-align: center;
+    @include border(.01rem,#8f8f94,solid,50%)
+}
+.foot .download .one1{
+    color: #252525;
+}
+.foot .download .one2{
+    @include border(.01rem,#252525,solid,50%)
+}
+.foot .copyright{
+    text-align: center;
+    font-size: .12rem;
+    color: #8f8f94;
+    margin-top: .2rem;
+}
