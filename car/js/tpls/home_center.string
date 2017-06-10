@@ -1,4 +1,5 @@
-<div id="big_banner">
+<div id="home_scroll">
+	<div id="big_banner">
 	<img src="http://adimage1.autozi.com//banner/1704071632075961/images/163207302_161872034.jpg">
 </div>
 <ul id="sel">
@@ -179,4 +180,5 @@
 		</li>
 	</ul>
 	<p class="copyright">Copyright &copy; Autozi.com 2017 版权所有</p>
+</div>
 </div>

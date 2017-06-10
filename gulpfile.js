@@ -19,7 +19,7 @@ gulp.task('copyhtml', function () {
 })
 //拷贝js/lib下面的js到build下
 gulp.task('copyjs', function () {
-  gulp.src('./car/js/lib/zepto.min.js')
+  gulp.src('./car/js/lib/*.js')
     .pipe(gulp.dest('./build/js'))
 })
 
@@ -28,7 +28,7 @@ gulp.task('webserver', function () {
   gulp.src('./build')
     .pipe(
       webserver({
-        host: 'localhost',
+        host: '10.9.166.191',
         port: 8020,
         directoryListing: {
           enable: true,
@@ -42,7 +42,7 @@ gulp.task('webserver', function () {
 // 打包js
 gulp.task('packjs', function () {
   gulp.src(
-    ['./car/js/index.js']
+    './car/js/*.js'
   )
     .pipe(named())
     .pipe(webpack({
@@ -68,9 +68,9 @@ gulp.task('packjs', function () {
 
 // 打包 scss
 gulp.task('packcss', function () {
-gulp.src([
-    './car/css/index.scss'
-])
+gulp.src(
+    './car/css/*.scss'
+)
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./build/css'))
 })
