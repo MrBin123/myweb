@@ -105,3 +105,16 @@
     line-height: .26rem;
     color: #666;
 }
+#search_center .hot-car li span{
+    width: .7rem;
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+     @include border(.01rem,#dcdcdc);
+    margin: .1rem;
+    padding: .14rem .17rem;
+}
+#search_center .hot-car li span img{
+    width: .3rem;
+    height: .3rem;
+}

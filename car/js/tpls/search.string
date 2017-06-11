@@ -1,5 +1,5 @@
   <div id="search">
   	  <div id="search_top"></div>
   	  <div id="search_center"></div>
-  	  <div id="search_bottom"></div>
+  	  <div id="bottom"></div>
   </div>

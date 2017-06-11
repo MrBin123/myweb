@@ -1,26 +1,26 @@
-#bottom ul {
-    @include flexbox();
-}
-#bottom ul li{
-    @include flex-direction();
-    @include flex(1);
-    @include align-items(center);
-    text-align: center;
-     color: #666;
-}
-#bottom ul li .yofont{
-    
-    color: #666;
-    font-size: .24rem;
-    
-}
-#bottom ul li .wenzi{
-    margin-top: -.06rem;
-    
-}
-#bottom ul li .yofont1{
-    color: #fd9478;
-}
-#bottom ul :first-child{
-    color: #fd9478;
-}
+//#bottom ul {
+//  @include flexbox();
+//}
+//#bottom ul li{
+//  @include flex-direction();
+//  @include flex(1);
+//  @include align-items(center);
+//  text-align: center;
+//   color: #666;
+//}
+//#bottom ul li .yofont{
+//  
+//  color: #666;
+//  font-size: .24rem;
+//  
+//}
+//#bottom ul li .wenzi{
+//  margin-top: -.06rem;
+//  
+//}
+//#bottom ul li .yofont1{
+//  color: #fd9478;
+//}
+//#bottom ul :first-child{
+//  color: #fd9478;
+//}
