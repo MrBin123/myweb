@@ -1,4 +1,5 @@
-
+<div class="scroll">
+	
 	<ul class="leixing">
 	<li>
 		<img src="http://style1.autozi.com/msite/images/common/fl.png"/>
@@ -224,82 +225,84 @@
 		<li>
 			<a href="###">
 				<span id="pic">
-					<img src="http://image.autozi.com//brand/200_672-logo.png"/>
+					<img src="http://image.autozi.com/carlogo/20140421135115-45.png"/>
 				</span>
-				<p>飞利浦</p>
+				<p>奔驰</p>
 			</a>
 		</li>
 		<li>
 			<a href="###">
 				<span id="pic">
-					<img src="http://image.autozi.com//brand/200_672-logo.png"/>
+					<img src="http://image.autozi.com/carlogo/20140421135050-78.png"/>
 				</span>
-				<p>飞利浦</p>
+				<p>大众</p>
 			</a>
 		</li>
 		<li>
 			<a href="###">
 				<span id="pic">
-					<img src="http://image.autozi.com//brand/200_672-logo.png"/>
+					<img src="http://image.autozi.com/carlogo/20140421134545-54.png"/>
 				</span>
-				<p>飞利浦</p>
+				<p>日产</p>
 			</a>
 		</li>
 		<li>
 			<a href="###">
 				<span id="pic">
-					<img src="http://image.autozi.com//brand/200_672-logo.png"/>
+					<img src="http://image.autozi.com/carlogo/20140421135658-37.png"/>
 				</span>
-				<p>飞利浦</p>
+				<p>丰田</p>
 			</a>
 		</li>
 		<li>
 			<a href="###">
 				<span id="pic">
-					<img src="http://image.autozi.com//brand/200_672-logo.png"/>
+					<img src="http://image.autozi.com/carlogo/20140421135938-76.png"/>
 				</span>
-				<p>飞利浦</p>
+				<p>本田</p>
 			</a>
 		</li>
 		<li>
 			<a href="###">
 				<span id="pic">
-					<img src="http://image.autozi.com//brand/200_672-logo.png"/>
+					<img src="http://image.autozi.com/carlogo/20160126164935-52.jpg"/>
 				</span>
-				<p>飞利浦</p>
+				<p>奇瑞</p>
 			</a>
 		</li>
 			<li>
 			<a href="###">
 				<span id="pic">
-					<img src="http://image.autozi.com//brand/200_672-logo.png"/>
+					<img src="http://image.autozi.com/carlogo/20140421141056-77.png"/>
 				</span>
-				<p>飞利浦</p>
+				<p>长安</p>
 			</a>
 		</li>
 		<li>
 			<a href="###">
 				<span id="pic">
-					<img src="http://image.autozi.com//brand/200_672-logo.png"/>
+					<img src="http://image.autozi.com/carlogo/20140421140845-70.png"/>
 				</span>
-				<p>飞利浦</p>
+				<p>雪佛兰</p>
 			</a>
 		</li>
 		<li>
 			<a href="###">
 				<span id="pic">
-					<img src="http://image.autozi.com//brand/200_672-logo.png"/>
+					<img src="http://image.autozi.com/carlogo/20140421134648-72.png"/>
 				</span>
-				<p>飞利浦</p>
+				<p>别克</p>
 			</a>
 		</li>
 		<li>
 			<a href="###">
 				<span id="pic">
-					<img src="http://image.autozi.com//brand/200_672-logo.png"/>
+					<img src="http://image.autozi.com/carlogo/20140421134754-55.png"/>
 				</span>
-				<p>飞利浦</p>
+				<p>现代</p>
 			</a>
 		</li>
 	
 	</ul>
+
+</div>

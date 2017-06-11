@@ -33,7 +33,7 @@ if (Math.abs(myScroll.y)/100>0.85) {
 })
 
 $('.footer li').each(function(index,value){
-	$(value).on('click',function(){
+	$(value).tap(function(){
 		switch (index){
 			case 0:
 				window.location.href="./index.html";
