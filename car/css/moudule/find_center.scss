@@ -1,0 +1,120 @@
+#search_center .leixing{
+    @include flexbox();
+    @include flex-direction();
+    height: .9rem;
+    @include border(.01rem 0 0 0,#dcdcdc);
+    @include align-items(center);
+    background: $base-color;
+}
+#search_center .leixing li{
+    width: 33%;
+    text-align: center;
+    height: .45rem;
+    @include border(0 .01rem 0 0,#dcdcdc);
+}
+#search_center .leixing li img{
+    width: .3rem;
+    height: .28rem;
+    margin-bottom: .04rem;
+}
+#search_center .leixing li:nth-child(3){
+    @include border(0);
+}
+
+
+#search_center .hot{
+    margin-top: .1rem;
+    width: 100%;
+    background: $base-color;
+    @include flex-direction(column);
+}
+#search_center .hot .hot_title{
+    width: 100%;
+    height: .4rem;
+    @include flex-direction();
+    line-height: .4rem;
+    @include flexbox();
+}
+#search_center .hot .hot_title p{
+    width: 80%;
+    font-size: .15rem;
+    margin: 0 .15rem;
+}
+#search_center .hot .hot_title a{
+    color: #666;
+    font-size: .15rem;
+    width: 20%;
+    text-align: center;
+}
+#search_center #sel{
+    padding-top: .1rem;
+    width: 100%;
+    @include flexbox();
+    @include flex-flow(row wrap);
+    @include align-content();
+    text-align: center;
+    @include border(0 0 .01rem 0,#dcdcdc);
+    background: $base-color;
+}
+#search_center #sel li{
+     width: 25%;
+     height: .8rem;
+     padding: .05rem 0;
+     @include align-items(center);
+}
+#search_center #sel li a{
+  font-size: .12rem;
+  color: #666;
+}
+#search_center #sel li img{
+    width: .45rem;
+    height: .45rem;
+}
+
+#search_center .hot-brand{
+    padding-bottom: .1rem;
+    @include flexbox();
+    @include flex-flow(row wrap);
+    background: $base-color;
+}
+#search_center .hot-brand li{
+    width: 25%;
+    height: .76rem;
+    text-align: center;
+    font-size: .12rem;
+    margin: .06rem 0;
+}
+#search_center .hot-brand li span{
+    width: .7rem;
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+     @include border(.01rem,#dcdcdc);
+    margin: .1rem;
+    padding: .18rem 0;
+}
+
+#search_center .hot-brand li span img{
+    width: .6rem;
+    height: .24rem;
+}
+#search_center .hot-brand li p{
+    width: 100%;
+    text-align: center;
+    height: .26rem;
+    line-height: .26rem;
+    color: #666;
+}
+#search_center .hot-car li span{
+    width: .7rem;
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+     @include border(.01rem,#dcdcdc);
+    margin: .1rem;
+    padding: .14rem .17rem;
+}
+#search_center .hot-car li span img{
+    width: .3rem;
+    height: .3rem;
+}
