@@ -42,6 +42,7 @@ $('.footer li').each(function(index,value){
 				window.location.href="./search.html";
 				break;
 			case 2:
+				window.location.href="./find.html";
 				break;
 			case 3:
 				break;
