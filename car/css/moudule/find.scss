@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-$base-color:#fff;
 #find{
    height: 100%;
    width: 100%;
@@ -10,18 +9,18 @@ $base-color:#fff;
    
 }
 
-
 #find_top{
-    height: .44rem;
+    height: .9rem;
     background: $base-color;
 }
-#find #find_center{
+#find_center{
 
 //  overflow-y: scroll;
 //  background: #efefef;
 //  margin-top: .1rem;
     @include flex(1);
-    background: red;
+//  background: #0ff;
+    width: 100%;
 }
 #bottom{
     height: .5rem;

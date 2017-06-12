@@ -20,13 +20,13 @@ var	myScroll = new IScroll('#center', {
 	}
 );
 myScroll.on('scroll',function(){
-if (Math.abs(myScroll.y)/100<=0.85 && Math.abs(myScroll.y)/100>0 && myScroll.y<0) {
+if (Math.abs(myScroll.y)/100<=1 && Math.abs(myScroll.y)/100>0 && myScroll.y<0) {
 	$('#top').css({'opacity':Math.abs(myScroll.y)/100,'background':'#ff5630'});
 }
 if (Math.abs(myScroll.y)<=0.1) {
 	$('#top').css({'opacity':'1','background':'transparent'});
 }
-if (Math.abs(myScroll.y)/100>0.85) {
+if (Math.abs(myScroll.y)/100>1) {
 	$('#top').css({'background':'#ff5630'});
 }
 	
