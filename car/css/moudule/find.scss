@@ -14,12 +14,8 @@
     background: $base-color;
 }
 #find_center{
-
-//  overflow-y: scroll;
-//  background: #efefef;
-//  margin-top: .1rem;
+    overflow-y: scroll;
     @include flex(1);
-//  background: #0ff;
     width: 100%;
 }
 #bottom{
