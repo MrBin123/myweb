@@ -1,1 +1,2 @@
  require('./views/home');
+

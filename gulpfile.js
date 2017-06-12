@@ -8,7 +8,7 @@ var webserver = require('gulp-webserver')
 var webpack = require('gulp-webpack')
 // 引入 文件名提取 包
 var named = require('vinyl-named')
-
+var proxy = require('http-proxy-middleware');
 // 引入 gulp-sass 包
 var sass = require('gulp-sass')
 
@@ -34,7 +34,16 @@ gulp.task('webserver', function () {
           enable: true,
           path: './build'
         },
-        livereload: true
+        livereload: true,
+        middleware:[
+        	proxy('/api',{
+        		target:'http://m.autozi.com/promotion',
+        		changeOrigin:true,
+        		pathRewrite:{
+        			'^/api':''
+        		}
+        	})
+        ]
       })
     )
 })
