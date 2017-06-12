@@ -12,7 +12,29 @@ commonUtil.render("#bottom",findBottom)
 
 
 
-
+$('#find_top .move a:first-child').css('color','#ff5e15');
+$('#find_top .moveline').css('width','33%');
+$('#find_top .move a').each(function(index,value){
+	$(value).tap(function(){
+		$(this).css('color','#ff5e15');
+		$(this).siblings().css('color','#666');
+		switch (index){
+			case 0:
+				$('#find_top .moveline').animate({'margin-left':'0'},250)
+				break;
+			case 1:
+				$('#find_top .moveline').animate({'margin-left':'33%'},250)
+				
+				break;
+			case 2:
+				$('#find_top .moveline').animate({'margin-left':'66%'},250)
+				break;
+			default:
+				break;
+		}
+	})
+	
+})
 
 
 
