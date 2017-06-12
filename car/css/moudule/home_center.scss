@@ -255,7 +255,9 @@
     color: #252525;
 }
 .foot .download .one2{
-    @include border(.01rem,#252525,solid,50%)
+
+    @include border(.02rem,#252525,solid,50%)
+
 }
 .foot .copyright{
     text-align: center;
@@ -263,4 +265,3 @@
     color: #8f8f94;
     margin-top: .2rem;
 }
-  

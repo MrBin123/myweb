@@ -1,128 +1,59 @@
 <div class="mui-content">
-
 	<div class="frm-user-hreder">
 		<p class="frm-top-bt">您还尚未登录哦~</p>
 		<a class="frm-nologo" href="http://m.autozi.com/quickLoginFailureHandler.do?prevPage=/member/mycenter.do">立即登录</a>
 	</div>
-	<ul class="mui-table-view mui-grid-view mui-grid-9 frm-bg-bai frm-bt-c">
+	<ul class="mui-table-view">
 		<li class="mui-table-view-cell mui-media mui-col-xs-4 frm-paddingNo frm-noBorder">
 			<a href="http://m.autozi.com/favorites/favoritesGoodsList.do" class="frm-my-rb frm-padding-no">
 				<span class="" id="favoritesNum">0</span>
 				<div class="mui-media-body frm-fontSize13">我的收藏</div>
 			</a>
 		</li>
+		<span class="fenge"></span>
 		<li class="mui-table-view-cell mui-media mui-col-xs-4 frm-paddingNo frm-noBorder">
 			<a href="http://m.autozi.com/promotion/myCouponList.do" class="frm-my-rb frm-padding-no">
 				<span class="" id="couponNum">0</span>
 				<div class="mui-media-body frm-fontSize13">优惠券</div>
 			</a>
 		</li>
+		<span class="fenge"></span>
 		<li class="mui-table-view-cell mui-media mui-col-xs-4 frm-paddingNo frm-noBorder">
 			<a href="http://m.autozi.com/member/queryGoodsListByBuy.do" class="frm-my-rb frm-padding-no">
 				<span class="" id="purchaseGoodsNum">0</span>
 				<div class="mui-media-body frm-fontSize13">购买记录</div>
 			</a>
 		</li>
-
 	</ul>
-	<ul class="mui-table-view frm-margin-tb10 frm-bt-c">
+	<ul class="Order">
+		
 		<li class="mui-table-view-cell frm-noAfter-no" id="viewOrder">
 			<a href="http://m.autozi.com/orderCenter/orderCenter.do" class="mui-navigate-right">
 				<span class="frm-icon-00 frm-tongyi">
-						<i class="icon-autozi-icon_28"></i>
-					</span> 我的订单
+					<i class="icon-autozi-icon_28"></i>
+				</span> 我的订单
 				<span class="frm-right-j">查看全部订单</span>
 			</a>
 		</li>
 		<li class="mui-table-view mui-grid-view mui-grid-9 frm-bg-bai frm-padding-ud14">
 			<a href="http://m.autozi.com/orderCenter/waitPayOrder.do" class="mui-table-view-cell mui-media mui-col-xs-4 frm-paddingNo frm-noBorder">
-				<span class="mui-icon icon-autozi-icon_08 frm-padding-no"><span class="mui-badge mui-badge-warning frm-icon-ra" id="waitPayOrderNum">0</span></span>
+				<span class="mui-icon icon-autozi-icon_08 frm-padding-no">
+					<span class="mui-badge mui-badge-warning frm-icon-ra" id="waitPayOrderNum">0</span>
+				</span>
 				<div class="mui-media-body frm-fontSize13">待付款</div>
 			</a>
 			<a href="http://m.autozi.com/orderCenter/orderPackage.do" class="mui-table-view-cell mui-media mui-col-xs-4 frm-paddingNo frm-noBorder">
-				<span class="mui-icon icon-autozi-icon_09 frm-padding-no"><span class="mui-badge mui-badge-warning frm-icon-ra" id="waitRecOrderNum">0</span></span>
+				<span class="mui-icon icon-autozi-icon_09 frm-padding-no">
+					<span class="mui-badge mui-badge-warning frm-icon-ra" id="waitRecOrderNum">0</span>
+				</span>
 				<div class="mui-media-body frm-fontSize13">待收货</div>
 			</a>
 			<a href="http://m.autozi.com/returnOrder/returnOrder.do" class="mui-table-view-cell mui-media mui-col-xs-4 frm-paddingNo frm-noBorder">
-				<span class="mui-icon icon-autozi-icon_25"></span>
-				<div class="mui-media-body frm-fontSize13">退货/售后</div>
-			</a>
-
-		</li>
-	</ul>
-
-	<ul class="mui-table-view frm-margin-tb10 frm-fontClor frm-bt-c">
-		<li class="mui-table-view-cell">
-			<a href="http://m.autozi.com/askPriceOrder/askOrderList.do" class="mui-navigate-right">
-				<span class="frm-icon-a8 frm-tongyi">
-						<i class="icon-autozi-icon_47"></i>
-					</span> 我的询价单
-				<span class="frm-right-j presell-c1"></span>
+			<span class="mui-icon icon-autozi-icon_25"></span>
+			<div class="mui-media-body frm-fontSize13">退货/售后</div>
 			</a>
 		</li>
 	</ul>
-
-	<ul class="mui-table-view frm-margin-tb10 frm-fontClor frm-bt-c">
-		<li class="mui-table-view-cell">
-			<a href="http://m.autozi.com/presellOrder/myPresellOrderList.do" class="mui-navigate-right">
-				<span class="frm-icon-a10 frm-tongyi">
-						<i class="icon-autozi-icon_44"></i>
-					</span> 我的预购单
-				<span class="frm-right-j presell-c1"></span>
-			</a>
-		</li>
-	</ul>
-
-	<ul class="mui-table-view frm-margin-tb10 frm-fontClor frm-bt-c">
-		<li class="mui-table-view-cell">
-			<a href="http://m.autozi.com/member/memberIntegral.do" class="mui-navigate-right">
-				<span class="frm-icon-a9 frm-tongyi">
-						<i class="icon-autozi-icon_29"></i>
-					</span> 我的积分
-				<span class="frm-right-j" id="integralCount">0</span>
-			</a>
-		</li>
-		<li class="mui-table-view-cell">
-			<a href="http://m.autozi.com/act/gift/role/giftOrderList.do" class="mui-navigate-right">
-				<span class="frm-icon-a7 frm-tongyi">
-			<i class="icon-autozi-icon_48"></i>
-		</span> 我的礼品
-			</a>
-		</li>
-	</ul>
-	<ul class="mui-table-view frm-margin-tb10 frm-fontClor frm-bt-c">
-		<li class="mui-table-view-cell">
-			<a href="http://m.autozi.com/member/listMyAddress.do" class="mui-navigate-right">
-				<span class="frm-icon-c2 frm-tongyi">
-						<i class="icon-autozi-icon_30"></i>
-					</span> 收货地址
-			</a>
-		</li>
-		<li class="mui-table-view-cell">
-			<a href="tel:400-0088-122" class="mui-navigate-right">
-				<span class="frm-icon-25 frm-tongyi">
-						<i class="icon-autozi-icon_31"></i>
-					</span> 客户服务
-				<span class="frm-right-j">400-0088-122</span>
-			</a>
-		</li>
-	</ul>
-	<ul class="mui-table-view frm-margin-tb10 frm-fontClor frm-bt-c">
-		<li class="mui-table-view-cell">
-			<a href="http://m.autozi.com/member/myAcount.do" class="mui-navigate-right">
-				<span class="frm-icon-c2 frm-tongyi">
-						<i class="icon-autozi-icon_32"></i>
-					</span> 账户管理
-				<span class="frm-right-j"></span>
-			</a>
-		</li>
-		<li class="mui-table-view-cell">
-			<a href="http://m.autozi.com/questionnaire/getfirstQuestionnaires.do" class="mui-navigate-right">
-				<span class="frm-icon-74 frm-tongyi">
-						<i class="icon-autozi-icon_33"></i>
-				</span> 意见反馈
-			</a>
-		</li>
-	</ul>
+	
 
 </div>
