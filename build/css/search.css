@@ -738,8 +738,13 @@ a {
   background: #fff; }
 
 #search_center {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  width: .1px;
   overflow: hidden;
-  background: #efefef; }
+  background: #efefef;
+  width: 100%; }
 
 #bottom {
   height: .5rem;
@@ -752,7 +757,7 @@ a {
   background: #f7f7f7; }
 
 #search_top header p {
-  height: 100%;
+  height: .44rem;
   line-height: .44rem;
   text-align: center;
   font-size: .17rem; }
