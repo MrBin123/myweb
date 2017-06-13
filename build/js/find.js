@@ -44,33 +44,70 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(1);
+	module.exports = __webpack_require__(8);
 
 
 /***/ }),
-/* 1 */
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */
+/***/ (function(module, exports) {
+
+	/*** IMPORTS FROM imports-loader ***/
+
+
+	var datas = "";
+	var common = {
+	  renderBody: function (tpl) {
+	//  var body = document.body
+	//  body.innerHTML = tpl + body.innerHTML
+			$('body').html(tpl);
+	  },
+	  render: function (obj, tpl) {
+	//  obj.innerHTML = tpl
+			$(obj).html(tpl);
+	//		console.log($(obj));
+	//		console.log(tpl);
+	  }
+	}
+
+	module.exports = common
+
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+	module.exports = "	<ul class=\"footer\">		<li>			<p class=\"yofont yofont1\">&#xe635;</p>			<p class=\"wenzi\">首页</p>		</li>		<li>			<p class=\"yofont\">&#xe714;</p>			<p class=\"wenzi\">查找</p>		</li>		<li>			<p class=\"yofont\">&#xe63b;</p>			<p class=\"wenzi\">发现</p>		</li>		<li>			<p class=\"yofont\">&#xe790;</p>			<p class=\"wenzi\">购物车</p>		</li>		<li>			<p class=\"yofont\">&#xe60f;</p>			<p class=\"wenzi\">我的</p>		</li>		</ul>			"
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 
 
-	 __webpack_require__(2)
+	 __webpack_require__(9)
 
 
 
 
 /***/ }),
-/* 2 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 
 
-	var app = __webpack_require__(3);
-	var findTop = __webpack_require__(4);
-	var findCenter = __webpack_require__(5);
-	var findBottom = __webpack_require__(6);
-	var commonUtil = __webpack_require__(7)
+	var app = __webpack_require__(10);
+	var findTop = __webpack_require__(11);
+	var findCenter = __webpack_require__(12);
+	var findBottom = __webpack_require__(7);
+	var commonUtil = __webpack_require__(6)
 	commonUtil.renderBody(app);
 	commonUtil.render("#find_top",findTop)
 	commonUtil.render("#find_center",findCenter)
@@ -180,6 +217,7 @@
 					case 3:
 						break;
 					case 4:
+					window.location.href="./Me.html";
 						break
 					default:
 						break;
@@ -268,54 +306,22 @@
 
 
 /***/ }),
-/* 3 */
+/* 10 */
 /***/ (function(module, exports) {
 
 	module.exports = "  <div id=\"find\">  	  <div id=\"find_top\"></div>  	  <div id=\"find_center\"></div>  	  <div id=\"bottom\"></div>  </div>"
 
 /***/ }),
-/* 4 */
+/* 11 */
 /***/ (function(module, exports) {
 
 	module.exports = "<header><p>发现</p></header><div class=\"move\">	<a href=\"###\">促销</a>	<a href=\"###\">资讯</a>	<a href=\"###\">公告</a></div><div class=\"moveline\"></div>"
 
 /***/ }),
-/* 5 */
+/* 12 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div class=\"scroll\">	<!--<div class=\"head\">        <img src=\"/imgs/arrow.png\" width=\"40\" height=\"40\"/>            <span>下拉刷新...</span>    </div>-->         <ul>         </ul>    <div class=\"foot\">        <img src=\"/imgs/arrow.png\" width=\"40\" height=\"40\"/>        <span>正在加载...</span>   </div></div>"
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports) {
-
-	module.exports = "	<ul class=\"footer\">		<li>			<p class=\"yofont yofont1\">&#xe635;</p>			<p class=\"wenzi\">首页</p>		</li>		<li>			<p class=\"yofont\">&#xe714;</p>			<p class=\"wenzi\">查找</p>		</li>		<li>			<p class=\"yofont\">&#xe63b;</p>			<p class=\"wenzi\">发现</p>		</li>		<li>			<p class=\"yofont\">&#xe790;</p>			<p class=\"wenzi\">购物车</p>		</li>		<li>			<p class=\"yofont\">&#xe60f;</p>			<p class=\"wenzi\">我的</p>		</li>		</ul>			"
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports) {
-
-	/*** IMPORTS FROM imports-loader ***/
-
-
-	var datas = "";
-	var common = {
-	  renderBody: function (tpl) {
-	//  var body = document.body
-	//  body.innerHTML = tpl + body.innerHTML
-			$('body').html(tpl);
-	  },
-	  render: function (obj, tpl) {
-	//  obj.innerHTML = tpl
-			$(obj).html(tpl);
-	//		console.log($(obj));
-	//		console.log(tpl);
-	  }
-	}
-
-	module.exports = common
-
-
 
 /***/ })
 /******/ ]);

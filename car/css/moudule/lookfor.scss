@@ -1,0 +1,22 @@
+@charset 'utf-8'
+
+#lookfor{
+    width: 100%;
+    background: #666;
+    @include flexbox();
+    @include flex-direction(column);
+}
+#lookfor #lookfor_top{
+    height: .44rem;
+    width: 100%;
+    @include flexbox();
+    @include flex-direction();
+    @include align-items();
+    @include border(0 0 .01rem 0,#dcdcdc);
+    padding: 0 .1rem;
+}
+#lookfor #lookfor_center{
+    width: 100%;
+    @include flex(1);
+    background: red;
+}

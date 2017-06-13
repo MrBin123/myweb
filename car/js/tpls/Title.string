@@ -1,0 +1,6 @@
+<header class="mui-bar">
+		<p class="mui-title">我的中驰</p>
+		<a href="http://m.autozi.com/member/myMessages.do" class="frm-pull-right frm-header-center mui-col-xs-1 ">
+			<span id="info" class="yofont">&#xe649;</span>
+		</a>
+</header>
