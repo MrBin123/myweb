@@ -737,7 +737,7 @@ a {
   background: #fff; }
 
 #find_center {
-  overflow-y: scroll;
+  overflow: hidden;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   flex: 1;
@@ -837,8 +837,54 @@ a {
   text-align: left;
   color: #9c9c9c; }
 
-#find_center img {
+#find_center ul img {
   width: 100%; }
+
+#find_center .head {
+  height: .4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-bottom: -.1rem; }
+
+#find_center .head img {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transition: transform 150ms;
+  -webkit-transition: transform 150ms;
+  width: .2rem;
+  height: .2rem; }
+
+#find_center .up {
+  transform: rotate(360deg) !important;
+  -webkit-transform: rotate(360deg) !important; }
+
+#find_center .foot {
+  text-align: center;
+  height: .4rem;
+  line-height: .4rem; }
+
+#find_center .foot img {
+  width: .2rem;
+  height: .2rem;
+  /*transform: rotate(0deg);*/
+  /*-webkit-transform: rotate(0deg);*/
+  transition: transform 150ms;
+  -webkit-transition: transform 150ms; }
+
+#find_center .down {
+  transform: rotate(180deg) !important;
+  -webkit-transform: rotate(180deg) !important; }
 
 #bottom ul {
   display: -webkit-box;

@@ -1,3 +1,4 @@
+var datas = "";
 var common = {
   renderBody: function (tpl) {
 //  var body = document.body
@@ -9,7 +10,6 @@ var common = {
 		$(obj).html(tpl);
 //		console.log($(obj));
 //		console.log(tpl);
-
   }
 }
 

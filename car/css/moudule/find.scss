@@ -14,7 +14,7 @@
     background: $base-color;
 }
 #find_center{
-    overflow-y: scroll;
+    overflow: hidden;
     @include flex(1);
     width: 100%;
 }

@@ -738,7 +738,7 @@ a {
   background: #fff; }
 
 #search_center {
-  overflow-y: scroll;
+  overflow: hidden;
   background: #efefef; }
 
 #bottom {
