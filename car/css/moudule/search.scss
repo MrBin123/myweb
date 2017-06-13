@@ -16,9 +16,10 @@
     background: $base-color;
 }
 #search_center{
-
+    @include flex(1);
     overflow: hidden;
     background: #efefef;
+    width: 100%;
 }
 #bottom{
     height: .5rem;

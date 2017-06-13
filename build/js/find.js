@@ -283,7 +283,7 @@
 /* 5 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"scroll\">	<!--<div class=\"head\">        <img src=\"/imgs/arrow.png\" width=\"40\" height=\"40\"/>            <span>下拉刷新...</span>    </div>-->         <ul>         </ul>    <div class=\"foot\">        <img src=\"/imgs/arrow.png\" width=\"40\" height=\"40\"/>        <span>上拉加载更多...</span>   </div></div>"
+	module.exports = "<div class=\"scroll\">	<!--<div class=\"head\">        <img src=\"/imgs/arrow.png\" width=\"40\" height=\"40\"/>            <span>下拉刷新...</span>    </div>-->         <ul>         </ul>    <div class=\"foot\">        <img src=\"/imgs/arrow.png\" width=\"40\" height=\"40\"/>        <span>正在加载...</span>   </div></div>"
 
 /***/ }),
 /* 6 */
