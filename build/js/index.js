@@ -65,6 +65,7 @@
 	/*** IMPORTS FROM imports-loader ***/
 
 
+	var datas = "";
 	var common = {
 	  renderBody: function (tpl) {
 	//  var body = document.body
@@ -76,7 +77,6 @@
 			$(obj).html(tpl);
 	//		console.log($(obj));
 	//		console.log(tpl);
-
 	  }
 	}
 
