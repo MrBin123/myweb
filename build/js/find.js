@@ -76,6 +76,9 @@
 	commonUtil.render("#find_center",findCenter)
 	commonUtil.render("#bottom",findBottom)
 
+	var info=0;
+	var adv=0;
+	var flagIndex=0;
 	$('#find_top .move a:first-child').css('color','#ff5e15');
 	$('#find_top .moveline').css('width','33%');
 	var	myScroll = new IScroll('#find_center', {
@@ -88,7 +91,7 @@
 			
 		}
 	);
-	myScroll.scrollBy(0, -40);
+	//myScroll.scrollBy(0, -40);
 	$('#find_top .move a').each(function(index,value){
 		$(value).tap(function(){
 			$(this).css('color','#ff5e15');
@@ -97,16 +100,23 @@
 				case 0:
 					$('#find_top .moveline').animate({'margin-left':'0'},250)
 					$('#find_center .scroll ul').html("");
+					flagIndex=0;
 					break;
 				case 1:
+					info=0;
+					flagIndex=1;
 					$('#find_center .scroll ul').html("");
 					$('#find_top .moveline').animate({'margin-left':'33%'},250)
-					getData({"autoInfoPageNo":1},'ajaxListAutoInfo.do');
+					getData({"autoInfoPageNo":info},'ajaxListAutoInfo.do');
+					myScroll.scrollTo(0, 0);
 					break;
 				case 2:
+					adv=0;
+					flagIndex=2;
 					$('#find_center .scroll ul').html("");
 					$('#find_top .moveline').animate({'margin-left':'66%'},250)
-					getData({"articlePageNo":1},'ajaxListArticle.do');
+					getData({"articlePageNo":adv},'ajaxListArticle.do');
+					myScroll.scrollTo(0, 0);
 					break;
 				default:
 					break;
@@ -120,8 +130,33 @@
 				data:obj,
 				success:function(data){
 					if (data !=null) {
-						$('#find_center .scroll ul').html(data);
+						switch (flagIndex){
+		            		case 0:
+		            			break;
+		            		case 1:
+		            			info++;
+		            			break;
+		            		case 2:
+		            			adv++;
+		            			break;	
+		            		default:
+		            			break;
+		            	}
+						$('#find_center .scroll ul').html($('#find_center .scroll ul').html()+data);
 						myScroll.refresh();
+					}else{
+						switch (flagIndex){
+		            		case 0:
+		            			break;
+		            		case 1:
+		            			info--;
+		            			break;
+		            		case 2:
+		            			adv--;
+		            			break;	
+		            		default:
+		            			break;
+	            		}
 					}
 	     		}
 			});
@@ -157,17 +192,18 @@
 	//上下拉刷新
 	    
 
-	    var head = $('#find_center .head img'),
-	        topImgHasClass = head.hasClass('up');
+	//  var head = $('#find_center .head img'),
+	//      topImgHasClass = head.hasClass('up');
 	    var foot = $('#find_center .foot img'),
-	        bottomImgHasClass = head.hasClass('down');
+	        bottomImgHasClass = foot.hasClass('down');
 	    myScroll.on('scroll', function () {
 	        var y = this.y,
 	            maxY = this.maxScrollY - y;
-	        if (y >= 0) {
-	            !topImgHasClass && head.addClass('up');
-	            return '';
-	        }
+	//      if (y >= 0) {
+	//          !topImgHasClass && head.addClass('up');
+	//          return '';
+	//      }
+
 	        if (maxY >= 0) {
 	            !bottomImgHasClass && foot.addClass('down');
 	            return '';
@@ -175,28 +211,28 @@
 	    });
 
 	    myScroll.on('scrollEnd', function () {
-	        if (this.y >= -40 && this.y < 0) {
-	            myScroll.scrollTo(0, -40);
-	            head.removeClass('up');
-	        } else if (this.y >= 0) {
-	            head.attr('src', './imgs/ajax-loader.gif');
-	            //TODO ajax下拉刷新数据
-	//
-	//          setTimeout(function () {
-	//              myScroll.scrollTo(0, -40);
+	//      if (this.y >= -40 && this.y < 0) {
+	//          myScroll.scrollTo(0, -40);
+	//          head.removeClass('up');
+	//      } else if (this.y >= 0) {
+	//          head.attr('src', './imgs/ajax-loader.gif');
+	//          //TODO ajax下拉刷新数据
+	////
+	////          setTimeout(function () {
+	////              myScroll.scrollTo(0, -40);
+	////              head.removeClass('up');
+	////              head.attr('src', './imgs/arrow.png');
+	////          }, 1000);
+	//			setTimeout(function () {
+	//				getData({"autoInfoPageNo":2},'ajaxListAutoInfo.do');
+	//				myScroll.scrollTo(0, -40);
 	//              head.removeClass('up');
 	//              head.attr('src', './imgs/arrow.png');
-	//          }, 1000);
-				setTimeout(function () {
-					getData({"autoInfoPageNo":2},'ajaxListAutoInfo.do');
-					myScroll.scrollTo(0, -40);
-	                head.removeClass('up');
-	                head.attr('src', './imgs/arrow.png');
-					
-					
-				}, 1000);
-			
-	        }
+	//				
+	//				
+	//			}, 1000);
+	//		
+	//      }
 
 	        var maxY = this.maxScrollY - this.y;
 	        if (maxY > -40 && maxY < 0) {
@@ -208,6 +244,20 @@
 	            //TODO ajax上拉加载数据
 	            var self = this;
 	            setTimeout(function () {
+	            	switch (flagIndex){
+	            		case 0:
+	            			break;
+	            		case 1:
+	            			info++;
+	            			getData({"autoInfoPageNo":info},'ajaxListAutoInfo.do');
+	            			break;
+	            		case 2:
+	            			adv++;
+	            			getData({"articlePageNo":adv},'ajaxListArticle.do');
+	            			break;	
+	            		default:
+	            			break;
+	            	}
 	                myScroll.refresh();
 	                myScroll.scrollTo(0, self.y + 40);
 	                foot.removeClass('down');
@@ -233,7 +283,7 @@
 /* 5 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"scroll\">	<div class=\"head\">        <img src=\"/imgs/arrow.png\" width=\"40\" height=\"40\"/>            <span>下拉刷新...</span>    </div>         <ul>         </ul>    <div class=\"foot\">        <img src=\"/imgs/arrow.png\" width=\"40\" height=\"40\"/>        <span>上拉加载更多...</span>   </div></div>"
+	module.exports = "<div class=\"scroll\">	<!--<div class=\"head\">        <img src=\"/imgs/arrow.png\" width=\"40\" height=\"40\"/>            <span>下拉刷新...</span>    </div>-->         <ul>         </ul>    <div class=\"foot\">        <img src=\"/imgs/arrow.png\" width=\"40\" height=\"40\"/>        <span>上拉加载更多...</span>   </div></div>"
 
 /***/ }),
 /* 6 */
