@@ -1,0 +1,452 @@
+.mui-content{
+    width: 100%;
+    height: 771px;
+    .frm-user-hreder{
+        width: 100%;
+        height: 101px;
+        background: #ff532b;
+        padding: 15px;
+        overflow: hidden;
+        p{
+            width: 170px;
+            margin: 0 auto;
+            text-align: center;
+            color: #fff;
+            font-size: 15px;
+             margin-top: 10px;
+        }
+        a{
+            width: 114px;
+            height: 30px;
+            line-height: 30px;
+            background: #ffeeea;
+            border-radius: 3px;
+            color: #ff532b;
+            text-align: center;
+            margin: 10px auto 0;
+            display: block;
+       }
+    }
+    .mui-table-view{
+        width: 100%;
+        height: 52px;
+        @include flexbox()
+        @include flex-direction();
+        background: white;
+        li{
+            @include flex(1);
+            hheight: 52px;
+            float: left;
+            span{
+                text-align: center;
+                display: block;
+                color: #8F8F94;
+                font-size: 17px;
+            }
+            a{
+                text-align: center;
+                color: black;
+                font-size: 13px;
+            }
+        }
+        .fenge{
+            width: 1px;
+            height: 26px;
+            margin-top: 13px;
+            background:#C9C9C9;
+        }
+    }
+    .Order{
+        margin-top:10px;
+        width: 100%;
+        background:white;
+        position: relative;
+        #viewOrder{
+            width: 100%;
+            height: 43px;
+            line-height: 43px;
+            float: left;
+            border-bottom: 1px solid #C9C9C9;
+            .frm-icon-00{
+                width: 25px;
+                height: 25px;
+                text-align: center;
+                background:#ffae00;
+                display: block;
+                top:8px;
+                left: 30px;
+                position: absolute;    
+                border-radius:12px;
+                #icon{
+                    position: absolute;
+                    top:-7px;
+                    left:3px;
+                    font-size: 8px;
+                    color: white;
+                }
+            }
+            .myorder{
+                float:left;
+                margin-left:.62rem;
+                color: black;
+            }
+            .frm-right-j{
+                float: right;
+                margin-right: 20px;
+                color: #C9C9C9;
+            }
+        }
+        .mui-table-view{
+            width: 100%;
+            height: 77px;
+            @include flexbox()
+            @include flex-direction();
+            a{
+                @include flex(1);
+                height: 77px; 
+                position: relative;
+                text-align: center;
+                .fukuan{
+                    color: black;
+                    margin-top: -10px;
+                }
+                .shouhuo{
+                    color: black;
+                    margin-top: -10px;
+                }
+                .shouhou{
+                    color: black;
+                    margin-top: -10px;
+                }
+            }
+        }      
+        
+    }
+    .zimingti{
+        margin-top: 10px;
+        width: 100%;
+        .mysheet{
+            width: 100%;
+            height: 43.25px;
+            background:white;
+            position: relative;
+            .frm-icon-a8{
+                width: 25px;
+                position: absolute;
+                height: 25px;
+                border-radius: 13px;
+                background: #fc605e;
+                display: block;
+                top: 9px;
+                left: 15px;
+                i{
+                    width: 16px;
+                    height: 16px;
+                    background: url(../../imgs/baojiadan.png);
+                    display: block;
+                    position: absolute;
+                    top: 4px;
+                    left: 4px;
+                    color: white;
+                }
+            }
+            .xunjia{
+                position: absolute;
+                margin-left: 50px;
+                line-height: 43.25px;
+                color: black;
+            }
+            .frm-right-j{
+                float: right;
+                margin-right: 20px;
+                color: #C9C9C9;
+                line-height: 43.25px;
+            }
+        }
+        .mypre{
+            width: 100%;
+            height: 43.25px;
+            background: white;
+            position: relative;
+            margin-top: 10px;
+            .frm-icon-a8{
+                width: 25px;
+                position: absolute;
+                height: 25px;
+                border-radius: 13px;
+                background: #98c248;
+                display: block;
+                top: 9px;
+                left: 15px;
+                i{
+                    width: 16px;
+                    height: 16px;
+                    background: url(../../imgs/yugou.png);
+                    display: block;
+                    position: absolute;
+                    top: 4px;
+                    left: 4px;
+                    color: white;
+                }
+            }
+            .xunjia{
+                position: absolute;
+                margin-left: 50px;
+                line-height: 43.25px;
+                color: black;
+            }
+            .frm-right-j{
+                float: right;
+                margin-right: 20px;
+                color: #C9C9C9;
+                line-height: 43.25px;
+            }
+        }
+        .myintegration{
+            width: 100%;
+            height: 43.25px;
+            background: white;
+            position: relative;
+            margin-top: 10px;
+            .frm-icon-a8{
+                width: 25px;
+                position: absolute;
+                height: 25px;
+                border-radius: 13px;
+                background: #48c2a9;
+                display: block;
+                top: 9px;
+                left: 15px;
+                i{
+                    width: 16px;
+                    height: 16px;
+                    background: url(../../imgs/jifen.png);
+                    display: block;
+                    position: absolute;
+                    top: 4px;
+                    left: 4px;
+                    color: white;
+                }
+            }
+            .xunjia{
+                position: absolute;
+                margin-left: 50px;
+                line-height: 43.25px;
+                color: black;
+            }
+            .zero{
+                float: right;
+                margin-right: 10px;
+                color: #C9C9C9;
+                line-height: 43.25px;
+            }
+            .frm-right-j{
+                float: right;
+                margin-right: 20px;
+               color: #C9C9C9;
+                line-height: 43.25px;
+            }
+        }
+        .mygit{
+            width: 100%;
+            height: 43.25px;
+            background: white;
+            position: relative;
+            
+            .frm-icon-a8{
+                width: 25px;
+                position: absolute;
+                height: 25px;
+                border-radius: 13px;
+                background: #42c7d8;
+                display: block;
+                top: 9px;
+                left: 15px;
+                i{
+                    width: 16px;
+                    height: 16px;
+                    background: url(../../imgs/git.png);
+                    display: block;
+                    position: absolute;
+                    top: 4px;
+                    left: 4px;
+                    color: white;
+                }
+            }
+            .xunjia{
+                position: absolute;
+                margin-left: 50px;
+                line-height: 43.25px;
+                color: black;
+            }
+            .frm-right-j{
+                float: right;
+                margin-right: 20px;
+                color: #C9C9C9;
+                line-height: 43.25px;
+            }
+        }
+        .myaddress{
+            width: 100%;
+            height: 43.25px;
+            background: white;
+            position: relative;
+            margin-top: 10px;
+            .frm-icon-a8{
+                width: 25px;
+                position: absolute;
+                height: 25px;
+                border-radius: 13px;
+                background: #48a4c2;
+                display: block;
+                top: 9px;
+                left: 15px;
+                i{
+                    width: 16px;
+                    height: 16px;
+                    background: url(../../imgs/dingwei.png);
+                    display: block;
+                    position: absolute;
+                    top: 4px;
+                    left: 4px;
+                    color: white;
+                }
+            }
+            .xunjia{
+                position: absolute;
+                margin-left: 50px;
+                line-height: 43.25px;
+                color: black;
+            }
+            .frm-right-j{
+                float: right;
+                margin-right: 20px;
+               color: #C9C9C9;
+                line-height: 43.25px;
+            }
+        }
+        .mycustomer{
+            width: 100%;
+            height: 43.25px;
+            background: white;
+            position: relative;
+           
+            .frm-icon-a8{
+                width: 25px;
+                position: absolute;
+                height: 25px;
+                border-radius: 13px;
+                background: #fa5c25;
+                display: block;
+                top: 9px;
+                left: 15px;
+                i{
+                    width: 16px;
+                    height: 16px;
+                    background: url(../../imgs/tel.png);
+                    display: block;
+                    position: absolute;
+                    top: 4px;
+                    left: 4px;
+                    color: white;
+                }
+            }
+            .phone{
+                float:right;
+                line-height: 43.25px;
+                margin-right: 10px;
+                color: #C9C9C9;
+            }
+            .xunjia{
+                position: absolute;
+                margin-left: 50px;
+                line-height: 43.25px;
+                color: black;
+            }
+            .frm-right-j{
+                float: right;
+                margin-right: 20px;
+                color: #C9C9C9;
+                line-height: 43.25px;
+            }
+        }
+        .myaccount{
+            width: 100%;
+            height: 43.25px;
+            background: white;
+            position: relative;
+            margin-top: 10px;
+            .frm-icon-a8{
+                width: 25px;
+                position: absolute;
+                height: 25px;
+                border-radius: 13px;
+                background: #48a4c2;
+                display: block;
+                top: 9px;
+                left: 15px;
+                i{
+                    width: 16px;
+                    height: 16px;
+                    background: url(../../imgs/zhanghu.png);
+                    display: block;
+                    position: absolute;
+                    top: 4px;
+                    left: 4px;
+                    color: white;
+                }
+            }
+            .xunjia{
+                position: absolute;
+                margin-left: 50px;
+                line-height: 43.25px;
+                color: black;
+            }
+            .frm-right-j{
+                float: right;
+                margin-right: 20px;
+                color: #C9C9C9;
+                line-height: 43.25px;
+            }
+        }
+        .myfeedback{
+            width: 100%;
+            height: 43.25px;
+            background: white;
+            position: relative;
+            
+            .frm-icon-a8{
+                width: 25px;
+                position: absolute;
+                height: 25px;
+                border-radius: 13px;
+                background: #63c774;
+                display: block;
+                top: 9px;
+                left: 15px;
+                i{
+                    width: 16px;
+                    height: 16px;
+                    background: url(../../imgs/yijian.png);
+                    display: block;
+                    position: absolute;
+                    top: 4px;
+                    left: 4px;
+                    color: white;
+                }
+            }
+            .xunjia{
+                position: absolute;
+                margin-left: 50px;
+                line-height: 43.25px;
+                color: black;
+            }
+            .frm-right-j{
+                float: right;
+                margin-right: 20px;
+               color: #C9C9C9;
+                line-height: 43.25px;
+            }
+        }
+    }
+}

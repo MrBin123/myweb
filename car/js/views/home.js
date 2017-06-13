@@ -47,6 +47,7 @@ $('.footer li').each(function(index,value){
 			case 3:
 				break;
 			case 4:
+				window.location.href="./Me.html";
 				break
 			default:
 				break;
@@ -54,7 +55,11 @@ $('.footer li').each(function(index,value){
 	})
 })
 
-
+$('#top #search').tap(function(){
+	
+	window.location.href="./lookfor.html";
+	
+})
 
 
 	

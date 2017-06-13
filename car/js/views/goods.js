@@ -38,6 +38,7 @@ var	myScroll = new IScroll('#search_center', {
 				case 3:
 					break;
 				case 4:
+				window.location.href="./Me.html";
 					break
 				default:
 					break;
