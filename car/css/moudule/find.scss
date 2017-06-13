@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+$base-color:#fff;
+#find{
+   height: 100%;
+   width: 100%;
+   @include flexbox();
+   @include flex-direction(column);
+   background: #efefef;
+   
+}
+
+
+#find_top{
+    height: .44rem;
+    background: $base-color;
+}
+#find #find_center{
+
+//  overflow-y: scroll;
+//  background: #efefef;
+//  margin-top: .1rem;
+    @include flex(1);
+    background: red;
+}
+#bottom{
+    height: .5rem;
+    width: 100%;
+    background: $base-color;
+} 
