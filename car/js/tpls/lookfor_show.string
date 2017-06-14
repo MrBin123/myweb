@@ -1,0 +1,5 @@
+<script id="data" type="text/html">
+{{each $data }}
+   <a href="###"><p> {{$value.title}}</p><p>约{{$value.count}}条</p></a>
+{{/each}}
+</script>

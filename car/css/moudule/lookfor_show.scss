@@ -1,0 +1,27 @@
+#lookfor_show{
+    position: absolute;
+    top: .44rem;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+    overflow-y: scroll;
+}
+#lookfor_show a{
+    height: .4rem;
+    @include border(0 0 .01rem 0,#dcdcdc);
+    @include flexbox();
+    @include flex-direction();
+    line-height: .4rem;
+    color:#666;
+    padding: 0 .2rem;
+    
+}
+#lookfor_show a p:first-child{
+    width: 75%;
+    @include ellipsis(null,1);
+}
+#lookfor_show a p:nth-child(2){
+    width: 25%;
+    text-align: center;
+}
+

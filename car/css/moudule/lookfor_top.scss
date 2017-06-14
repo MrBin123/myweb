@@ -1,27 +1,44 @@
 #lookfor_top .back{
      @include flex(1)
+     color: #333;
+     font-size: .16rem;
 }
 #lookfor_top #search{
+    @include flexbox();
    @include flex(6);
    background: $base-color;
+   @include flex-direction();
    height: .3rem;
+   width: 100%;
    @include border-radius(.06rem);
    @include align-items(center);
     line-height: .3rem;
-    text-align: center;
     color: #666;
-    font-size: .12rem;
+    font-size: .14rem;
+    @include border(.02rem,#dcdcdc)
+    text-align: center;
+    padding-left: .2rem;
     }
 
 #lookfor_top #down{
     font-size: .12rem;
-    margin: 0 .06rem;
      color: #666;
+     padding: 0 .04rem;
+     margin-top: .02rem;
+}
+#lookfor_top #text{
+    height: 100%;
+    border: none;
+    font-size: .12rem;
+}
+#lookfor_top #se{
+    height: 100%;
+    text-align: center;
+    width: .30rem;
+    @include align-items();
+    @include border(0 0 0 .01rem,#dcdcdc);
+}
+#lookfor_top #se .yofont{
+    font-size: .26rem;
 }
 
-#lookfor_top #se{
-    font-size: .19rem;
-    margin: 0 .1rem;
-    margin-top: .05rem ;
-    color: #666;
-     }

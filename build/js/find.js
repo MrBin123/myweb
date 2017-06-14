@@ -206,19 +206,19 @@
 			$(value).tap(function(){
 				switch (index){
 					case 0:
-						window.location.href="./index.html";
+						window.location.href="/index.html";
 						break;
 					case 1:
-						window.location.href="./search.html";
+						window.location.href="/search.html";
 						break;
 					case 2:
-						window.location.href="./find.html";
+						window.location.href="/find.html";
 						break;
 					case 3:
 						break;
 					case 4:
-					window.location.href="./Me.html";
-						break
+					window.location.href="/Me.html";
+						break;
 					default:
 						break;
 				}
@@ -296,11 +296,11 @@
 	            		default:
 	            			break;
 	            	}
-	                myScroll.refresh();
+	//              myScroll.refresh();
 	                myScroll.scrollTo(0, self.y + 40);
 	                foot.removeClass('down');
 	                foot.attr('src', './imgs/arrow.png');
-	            }, 1000);
+	            }, 1500);
 	        }
 	    })
 

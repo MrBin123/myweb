@@ -29,7 +29,7 @@ gulp.task('webserver', function () {
     .pipe(
       webserver({
         host: '10.9.166.191',
-        port: 8020,
+        port: 8040,
         directoryListing: {
           enable: true,
           path: './build'
@@ -41,6 +41,13 @@ gulp.task('webserver', function () {
         		changeOrigin:true,
         		pathRewrite:{
         			'^/api':''
+        		}
+        	}),
+        	proxy('/go',{
+        		target:'http://m.autozi.com/goods',
+        		changeOrigin:true,
+        		pathRewrite:{
+        			'^/go':''
         		}
         	})
         ]

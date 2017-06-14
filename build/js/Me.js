@@ -82,7 +82,6 @@
 			interactiveScrollbars: true,
 			shrinkScrollbars: 'scale',
 			fadeScrollbars: true
-			
 		}
 	);
 

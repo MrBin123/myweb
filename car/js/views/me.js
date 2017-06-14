@@ -16,7 +16,6 @@ var	myScroll = new IScroll('.Order', {
 		interactiveScrollbars: true,
 		shrinkScrollbars: 'scale',
 		fadeScrollbars: true
-		
 	}
 );
 

@@ -111,12 +111,60 @@
 	var app = __webpack_require__(21);
 	var findTop = __webpack_require__(22);
 	var findCenter = __webpack_require__(23);
-	var commonUtil = __webpack_require__(6)
+	var show = __webpack_require__(24);
+	var commonUtil = __webpack_require__(6);
 
 	commonUtil.renderBody(app);
 	commonUtil.render("#lookfor_top",findTop)
 	commonUtil.render("#lookfor_center",findCenter)
+	commonUtil.render("#lookfor_show",show)
+	$('#lookfor_show').hide();
+	$('#text').bind('input propertychange',function(){
+		if ($(this).val() != "") {
+			ajaxTo($(this).val());
+		}else{
+			$('#lookfor_show').hide();
+		}
+		
+	})
+	function ajaxTo(keyWord){
+		$.ajax({
+			type:"get",
+			url:"/go/getSearchFacetData.do",
+			data:{
+				keyWords:keyWord
+			},
+			success:function(data){
+				$('#lookfor_show').show();
+				change(data);
+				addHistory($('#text').val())
+			}
+		});
+	}
 
+	function change(data){
+		$('#lookfor_show').html(template('data',JSON.parse(data)));
+	}  
+
+	$('#hot_search .hot li').each(function(){
+		$(this).tap(function(){
+			ajaxTo($(this).text())
+			$('#text').val($(this).text())
+		})
+	})
+
+	$('#history p:not(first-child)').each(function(){
+		$(this).tap(function(){
+			ajaxTo($(this).text())
+			$('#text').val($(this).text())
+		})
+	})
+
+	//添加历史搜索
+	function addHistory(keywords){
+		console.log(keywords)
+		$('#history').append($('<p>'+keywords+'</p>'))
+	}
 
 
 
@@ -124,19 +172,25 @@
 /* 21 */
 /***/ (function(module, exports) {
 
-	module.exports = "  <div id=\"lookfor\">  	  <div id=\"lookfor_top\"></div>  	  <div id=\"lookfor_center\"></div>  </div>"
+	module.exports = "  <div id=\"lookfor\">  	  <div id=\"lookfor_top\"></div>  	  <div id=\"lookfor_center\"></div>  	  <div id=\"lookfor_show\"></div>  </div>"
 
 /***/ }),
 /* 22 */
 /***/ (function(module, exports) {
 
-	module.exports = "<a href=\"index.html\" class=\"back\">取消</a><div id=\"search\">	<span>关键词</span>	<span class=\"yofont\" id=\"down\">&#xe67c;</span>	<span >名称/型号/品牌/车型</span>	<span class=\"yofont\" id=\"se\">&#xe611;</span></div>"
+	module.exports = "<a href=\"index.html\" class=\"back\">取消</a><div id=\"search\">	<span>关键词</span>	<span class=\"yofont\" id=\"down\">&#xe67c;</span>	<input type=\"text\" id=\"text\" placeholder=\"名称/型号/品牌/车型\"/>	<p id=\"se\"><span class=\"yofont\">&#xe611;</span></p>	</div>"
 
 /***/ }),
 /* 23 */
 /***/ (function(module, exports) {
 
-	module.exports = ""
+	module.exports = "<div id=\"hot_search\">	<p>热搜</p>	<ul class=\"hot\">		<li><a href=\"###\">马勒</a></li>		<li><a href=\"###\">冷媒</a></li>		<li><a href=\"###\">耐诺思</a></li>		<li><a href=\"###\">瓦尔塔</a></li>		<li><a href=\"###\">DENSO电装</a></li>		<li><a href=\"###\">飞利浦</a></li>		<li><a href=\"###\">NGK</a></li>		<li><a href=\"###\">FSL</a></li>	</ul>	<div id=\"history\">		<p>历史搜索</p>	</div>		</div>"
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports) {
+
+	module.exports = "<script id=\"data\" type=\"text/html\">{{each $data }}   <a href=\"###\"><p> {{$value.title}}</p><p>约{{$value.count}}条</p></a>{{/each}}</script>"
 
 /***/ })
 /******/ ]);
