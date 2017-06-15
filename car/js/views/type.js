@@ -18,6 +18,7 @@ $('#text').bind('input propertychange',function(){
 	}
 	
 })
+
 function ajaxTo(keyWord){
 	$.ajax({
 		type:"get",
@@ -28,7 +29,6 @@ function ajaxTo(keyWord){
 		success:function(data){
 			$('#lookfor_show').show();
 			change(data);
-			addHistory($('#text').val())
 		}
 	});
 }
@@ -44,26 +44,46 @@ $('#hot_search .hot li').each(function(){
 	})
 })
 
-
-
+var	myScroll = new IScroll('.scroller', {
+		probeType:3,
+		scrollbars: true,
+		mouseWheel: true,
+		interactiveScrollbars: true,
+		shrinkScrollbars: 'scale',
+		fadeScrollbars: true
+	}
+);
 //添加历史搜索
 function addHistory(keywords){
 	console.log(keywords)
 	$('#history').append($('<p>'+keywords+'</p>'))
 	$('#history p:not(:first-child)').each(function(index,value){
-//		console.log("---------"+value)
 		$(this).tap(function(){
 			ajaxTo($(this).text())
 			$('#text').val($(this).text())
 		})
 	})
 	$('.clear').show();
+	myScroll.refresh();
 }
 
-$('#lookfor_center .clear p').eq(0).tap(function(){
+$('#lookfor_center .clear a').eq(0).tap(function(){
 //	console.log(13515)
-		$('#history p:not(:first-child)').each(function(index,value){
-			$(this).remove();
-		})
-		$('.clear').hide();
+	$('#history p:not(:first-child)').each(function(index,value){
+		$(this).remove();
+	})
+	$('.clear').hide();
 })
+
+$('#search .myse').tap(function(e){
+	addHistory($('#text').val());
+})
+
+$(document).keypress(function(event){  
+    var keycode = (event.keyCode ? event.keyCode : event.which);  
+    if(keycode == '13'){  
+       addHistory($('#text').val());     
+    }  
+}); 
+
+

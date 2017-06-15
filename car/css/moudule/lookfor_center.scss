@@ -35,8 +35,6 @@
     @include flexbox()
     @include align-items(center);
     @include flex-direction(column);
-    overflow-y: scroll;
-    
 }
 #lookfor_center #hot_search #history p{
     height: .4rem;
@@ -48,20 +46,20 @@
 }
 
 #lookfor_center .clear{
-//  height: .3rem;
     width: 100%;
     @include flexbox()
     margin-top: .1rem;
     @include justify-content(center);
     @include align-items(center);
-    padding: 0 25%;
+    text-align: center;
+   
 }
-.clearhis{
+#lookfor_center .clear a{
     color: #545454;
     height: 100%;
-    width: 50%;
+    padding: .04rem .3rem;
     @include border(.02rem,#dcdcdc);
     @include border-radius(.04rem);
     background: #fff;
-    text-align: center;
+    
 }
