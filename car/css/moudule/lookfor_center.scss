@@ -1,0 +1,48 @@
+#lookfor_center #hot_search p{
+    height: .35rem;
+    line-height: .35rem;
+    font-size: .14rem;
+    @include flexbox()
+    width: 100%;
+    padding-left: .1rem;
+}
+#lookfor_center #hot_search ul{
+    width: 100%;
+    @include flexbox()
+    @include flex-flow(row wrap);
+    background: $base-color;
+    @include border(.01rem 0 0 0,#dcdcdc)
+}
+#lookfor_center #hot_search ul li{
+    width:25%;
+    height: .42rem;
+    text-align: center;
+    line-height: .42rem;
+    @include border(0 .01rem .01rem 0,#dcdcdc)
+}
+#lookfor_center #hot_search ul li a{
+    color: #666;
+    font-size: .12rem;
+}
+#lookfor_center #hot_search ul li:nth-child(1){
+     @include border(0 .01rem .01rem .01rem ,#dcdcdc)
+}
+#lookfor_center #hot_search ul li:nth-child(5){
+     @include border(0 .01rem .01rem .01rem ,#dcdcdc)
+}
+#lookfor_center #hot_search #history{
+    background: #fff;
+    @include flexbox()
+    @include align-items(center);
+    @include flex-direction(column);
+    overflow-y: scroll;
+    
+}
+#lookfor_center #hot_search #history p{
+    height: .4rem;
+    @include border(0 0 .01rem,#dcdcdc);
+    line-height: .4rem;
+}
+#lookfor_center #hot_search #history p:first-child{
+    background: #dcdcdc;
+}

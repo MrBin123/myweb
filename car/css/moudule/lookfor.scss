@@ -17,6 +17,9 @@
 }
 #lookfor #lookfor_center{
     width: 100%;
-    @include flex(1);
-    background: red;
+     @include flexbox();
+    @include flex-direction(column);
+    
 }
+
+

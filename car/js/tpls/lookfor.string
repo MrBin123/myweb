@@ -1,4 +1,5 @@
   <div id="lookfor">
   	  <div id="lookfor_top"></div>
   	  <div id="lookfor_center"></div>
+  	  <div id="lookfor_show"></div>
   </div>

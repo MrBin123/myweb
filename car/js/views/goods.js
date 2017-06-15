@@ -17,8 +17,7 @@ var	myScroll = new IScroll('#search_center', {
 		fadeScrollbars: true
 		
 	}
-);
-
+)
 	$('#bottom ul li').css('color','#666');
 	$('#bottom ul li p').removeClass('yofont1');
 	$('#bottom ul li').eq(1).css('color','#fd9478');
@@ -27,19 +26,19 @@ var	myScroll = new IScroll('#search_center', {
 		$(value).tap(function(){
 			switch (index){
 				case 0:
-					window.location.href="./index.html";
+					window.location.href="/index.html";
 					break;
 				case 1:
-					window.location.href="./search.html";
+					window.location.href="/search.html";
 					break;
 				case 2:
-					window.location.href="./find.html";
+					window.location.href="/find.html";
 					break;
 				case 3:
 					break;
 				case 4:
-				window.location.href="./Me.html";
-					break
+				window.location.href="/Me.html";
+					break;
 				default:
 					break;
 			}
