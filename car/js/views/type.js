@@ -9,6 +9,7 @@ commonUtil.render("#lookfor_top",findTop)
 commonUtil.render("#lookfor_center",findCenter)
 commonUtil.render("#lookfor_show",show)
 $('#lookfor_show').hide();
+$('.clear').hide();
 $('#text').bind('input propertychange',function(){
 	if ($(this).val() != "") {
 		ajaxTo($(this).val());
@@ -43,15 +44,26 @@ $('#hot_search .hot li').each(function(){
 	})
 })
 
-$('#history p:not(first-child)').each(function(){
-	$(this).tap(function(){
-		ajaxTo($(this).text())
-		$('#text').val($(this).text())
-	})
-})
+
 
 //添加历史搜索
 function addHistory(keywords){
 	console.log(keywords)
 	$('#history').append($('<p>'+keywords+'</p>'))
+	$('#history p:not(:first-child)').each(function(index,value){
+//		console.log("---------"+value)
+		$(this).tap(function(){
+			ajaxTo($(this).text())
+			$('#text').val($(this).text())
+		})
+	})
+	$('.clear').show();
 }
+
+$('#lookfor_center .clear p').eq(0).tap(function(){
+//	console.log(13515)
+		$('#history p:not(:first-child)').each(function(index,value){
+			$(this).remove();
+		})
+		$('.clear').hide();
+})

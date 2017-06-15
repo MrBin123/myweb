@@ -46,3 +46,21 @@
 #lookfor_center #hot_search #history p:first-child{
     background: #dcdcdc;
 }
+
+#lookfor_center .clear{
+//  height: .3rem;
+    width: 100%;
+    @include flexbox()
+    margin-top: .1rem;
+    @include justify-content(center);
+    @include align-items(center);
+    padding: 0 25%;
+}
+#lookfor_center .clear>p{
+    color: #545454;
+    height: 100%;
+    @include border(.02rem,#dcdcdc);
+    @include border-radius(.04rem);
+    background: #fff;
+    text-align: center;
+}
