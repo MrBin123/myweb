@@ -3,6 +3,6 @@
 	<span>关键词</span>
 	<span class="yofont" id="down">&#xe67c;</span>
 	<input type="text" id="text" placeholder="名称/型号/品牌/车型"/>
-	<p id="se"><span class="yofont">&#xe611;</span></p>
+	<p id="se" class="myse"><span class="yofont">&#xe611;</span></p>
 	
 </div>
