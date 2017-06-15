@@ -11,8 +11,10 @@
 		<li><a href="###">FSL</a></li>
 	</ul>
 	<div id="history">
-		<p>历史搜索</p>
+		<p class="first">历史搜索</p>
 	</div>
-	
+	<div class="clear">
+		<p>清空历史条件</p>
+	</div>
 	
 </div>

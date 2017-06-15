@@ -119,6 +119,7 @@
 	commonUtil.render("#lookfor_center",findCenter)
 	commonUtil.render("#lookfor_show",show)
 	$('#lookfor_show').hide();
+	$('.clear').hide();
 	$('#text').bind('input propertychange',function(){
 		if ($(this).val() != "") {
 			ajaxTo($(this).val());
@@ -153,19 +154,29 @@
 		})
 	})
 
-	$('#history p:not(first-child)').each(function(){
-		$(this).tap(function(){
-			ajaxTo($(this).text())
-			$('#text').val($(this).text())
-		})
-	})
+
 
 	//添加历史搜索
 	function addHistory(keywords){
 		console.log(keywords)
 		$('#history').append($('<p>'+keywords+'</p>'))
+		$('#history p:not(:first-child)').each(function(index,value){
+	//		console.log("---------"+value)
+			$(this).tap(function(){
+				ajaxTo($(this).text())
+				$('#text').val($(this).text())
+			})
+		})
+		$('.clear').show();
 	}
 
+	$('#lookfor_center .clear p').eq(0).tap(function(){
+	//	console.log(13515)
+			$('#history p:not(:first-child)').each(function(index,value){
+				$(this).remove();
+			})
+			$('.clear').hide();
+	})
 
 
 /***/ }),
@@ -184,7 +195,7 @@
 /* 23 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div id=\"hot_search\">	<p>热搜</p>	<ul class=\"hot\">		<li><a href=\"###\">马勒</a></li>		<li><a href=\"###\">冷媒</a></li>		<li><a href=\"###\">耐诺思</a></li>		<li><a href=\"###\">瓦尔塔</a></li>		<li><a href=\"###\">DENSO电装</a></li>		<li><a href=\"###\">飞利浦</a></li>		<li><a href=\"###\">NGK</a></li>		<li><a href=\"###\">FSL</a></li>	</ul>	<div id=\"history\">		<p>历史搜索</p>	</div>		</div>"
+	module.exports = "<div id=\"hot_search\">	<p>热搜</p>	<ul class=\"hot\">		<li><a href=\"###\">马勒</a></li>		<li><a href=\"###\">冷媒</a></li>		<li><a href=\"###\">耐诺思</a></li>		<li><a href=\"###\">瓦尔塔</a></li>		<li><a href=\"###\">DENSO电装</a></li>		<li><a href=\"###\">飞利浦</a></li>		<li><a href=\"###\">NGK</a></li>		<li><a href=\"###\">FSL</a></li>	</ul>	<div id=\"history\">		<p class=\"first\">历史搜索</p>	</div>	<div class=\"clear\">		<p>清空历史条件</p>	</div>	</div>"
 
 /***/ }),
 /* 24 */
