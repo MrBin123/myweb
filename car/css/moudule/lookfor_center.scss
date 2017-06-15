@@ -56,9 +56,10 @@
     @include align-items(center);
     padding: 0 25%;
 }
-#lookfor_center .clear>p{
+.clearhis{
     color: #545454;
     height: 100%;
+    width: 50%;
     @include border(.02rem,#dcdcdc);
     @include border-radius(.04rem);
     background: #fff;

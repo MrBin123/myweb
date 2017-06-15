@@ -14,7 +14,7 @@
 		<p class="first">历史搜索</p>
 	</div>
 	<div class="clear">
-		<p>清空历史条件</p>
+		<p class="clearhis">清空历史条件</p>
 	</div>
 	
 </div>
