@@ -154,7 +154,7 @@
 		})
 	})
 
-	var	myScroll = new IScroll('.scroller', {
+	var	myScroll = new IScroll('#scroller', {
 			probeType:3,
 			scrollbars: true,
 			mouseWheel: true,
@@ -163,6 +163,7 @@
 			fadeScrollbars: true
 		}
 	);
+
 	//添加历史搜索
 	function addHistory(keywords){
 		console.log(keywords)
@@ -216,7 +217,7 @@
 /* 23 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"scroller\">	<div id=\"hot_search\">		<p>热搜</p>		<ul class=\"hot\">			<li><a href=\"###\">马勒</a></li>			<li><a href=\"###\">冷媒</a></li>			<li><a href=\"###\">耐诺思</a></li>			<li><a href=\"###\">瓦尔塔</a></li>			<li><a href=\"###\">DENSO电装</a></li>			<li><a href=\"###\">飞利浦</a></li>			<li><a href=\"###\">NGK</a></li>			<li><a href=\"###\">FSL</a></li>		</ul>		<div id=\"history\">			<p class=\"first\">历史搜索</p>		</div>		<div class=\"clear\">			<a>清空历史条件</a>		</div>		</div></div>"
+	module.exports = "<div id=\"scroller\">	<div id=\"hot_search\">		<p>热搜</p>		<ul class=\"hot\">			<li><a href=\"###\">马勒</a></li>			<li><a href=\"###\">冷媒</a></li>			<li><a href=\"###\">耐诺思</a></li>			<li><a href=\"###\">瓦尔塔</a></li>			<li><a href=\"###\">DENSO电装</a></li>			<li><a href=\"###\">飞利浦</a></li>			<li><a href=\"###\">NGK</a></li>			<li><a href=\"###\">FSL</a></li>		</ul>		<div id=\"history\">			<p class=\"first\">历史搜索</p>		</div>		<div class=\"clear\">			<a>清空历史条件</a>		</div>		</div></div>"
 
 /***/ }),
 /* 24 */

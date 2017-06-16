@@ -1,4 +1,4 @@
-<div class="scroller">
+<div id="scroller">
 	<div id="hot_search">
 		<p>热搜</p>
 		<ul class="hot">

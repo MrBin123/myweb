@@ -44,7 +44,7 @@ $('#hot_search .hot li').each(function(){
 	})
 })
 
-var	myScroll = new IScroll('.scroller', {
+var	myScroll = new IScroll('#scroller', {
 		probeType:3,
 		scrollbars: true,
 		mouseWheel: true,
@@ -53,6 +53,7 @@ var	myScroll = new IScroll('.scroller', {
 		fadeScrollbars: true
 	}
 );
+
 //添加历史搜索
 function addHistory(keywords){
 	console.log(keywords)
