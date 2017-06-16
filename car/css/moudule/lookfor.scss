@@ -18,7 +18,10 @@
 #lookfor #lookfor_center{
     width: 100%;
      @include flexbox();
-    @include flex-direction(column);
+//  @include flex-direction(column);
+//  height: 2rem;
+//  overflow: hidden;
+    
 }
 
 

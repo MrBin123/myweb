@@ -781,11 +781,7 @@ a {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  flex-direction: column; }
+  display: flex; }
 
 #lookfor_top .back {
   -webkit-box-flex: 1;
@@ -903,6 +899,10 @@ a {
 
 #lookfor_top #se .yofont {
   font-size: .26rem; }
+
+#lookfor_center #scroller {
+  width: 100%;
+  overflow: hidden; }
 
 #lookfor_center #hot_search p {
   height: .35rem;
