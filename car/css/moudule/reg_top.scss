@@ -1,0 +1,22 @@
+.reg .reg-top a {
+    @include flex(1);
+    height: 100%;
+    line-height: .44rem;
+    text-align: center;
+  
+}
+.reg .reg-top a img{
+    width: .24rem;
+    height: .24rem;
+}
+.reg .reg-top p{
+    @include flex(7)
+    color: #000;
+    font-size: .17rem;
+    line-height: .44rem;
+    text-align: center;
+}
+.reg .reg-top b{
+    height: 100%;
+     @include flex(1)
+}

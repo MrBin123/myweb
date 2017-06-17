@@ -1,0 +1,17 @@
+<form action="" method="post" enctype="multipart/form-data">
+	<div class="user">
+		<label for="username">登录用户名</label><input type="text" id="username" placeholder="输入5-20个字符，以字母开头、可带数字、“_”" />
+	</div>
+	<div class="pwd">
+		<label for="password">登陆密码</label><input type="text" id="password" placeholder="最少5个字符" />
+	</div>
+	<div class="confirm">
+		<label for="conPassword">确认密码</label><input type="text" id="conPassword" placeholder="输入登录密码" />
+	</div>
+	<div class="head">
+		<label for="upload">上传头像</label><input type="file" name="upload" id="upload" value="上传头像" accept="image/png, image/jpeg, image/gif, image/jpg"/>
+	</div>
+	<div class="sub">
+		<input type="submit" value="加盟入驻"/>
+	</div>
+</form>

@@ -1,0 +1,116 @@
+.user{
+    @include flexbox()
+    height: .44rem;
+     background: #fff;
+     @include border(0 0 .02rem 0,#dcdcdc);
+}
+.user label{
+    @include flex(3);
+    height: 100%;
+    line-height: .44rem;
+    text-align: center;
+    font-size: .14rem;
+}
+.user #username{
+    height: 100%;
+    color: #666;
+    @include flex(7);
+    border: 0;
+    line-height: .44rem;
+    font-size: .14rem;
+}
+.pwd{
+    @include flexbox()
+    height: .44rem;
+     background: #fff;
+     @include border(0 0 .02rem 0,#dcdcdc);
+}
+.pwd label{
+    @include flex(3);
+    height: 100%;
+    line-height: .44rem;
+    text-align: center;
+    font-size: .14rem;
+}
+.pwd #password{
+    height: 100%;
+    color: #666;
+    @include flex(7);
+    border: 0;
+    line-height: .44rem;
+    font-size: .14rem;
+}
+.confirm{
+    @include flexbox()
+    height: .44rem;
+     background: #fff;
+     @include border(0 0 .02rem 0,#dcdcdc);
+}
+.confirm label{
+    @include flex(3);
+    height: 100%;
+    line-height: .44rem;
+    text-align: center;
+    font-size: .14rem;
+}
+.confirm #conPassword{
+    height: 100%;
+    color: #666;
+    @include flex(7);
+    border: 0;
+    line-height: .44rem;
+    font-size: .14rem;
+}
+.head{
+    @include flexbox()
+    height: .44rem;
+     background: #fff;
+     @include border(0 0 .02rem 0,#dcdcdc);
+}
+.head label{
+    @include flex(3);
+    height: 100%;
+    line-height: .44rem;
+    text-align: center;
+    font-size: .14rem;
+}
+.head #upload{
+    height: 100%;
+    color: #666;
+    @include flex(7);
+    border: none;
+    line-height: .44rem;
+    font-size: .14rem;
+    border: none;
+    
+}
+.sub{
+    @include flexbox()
+    height: 1rem;
+    text-align: center;
+    @include align-items(center);
+    padding: 0 .1rem;
+}
+.sub input{
+    height: .4rem;
+    @include flex();
+    border: 0;
+    background: #d6d6d6;
+    color: #bdbdbd;
+    @include border(.01rem,#d6d6d6,solid,.06rem);
+}
+.regOrforget{
+    @include flexbox();
+    @include flex-direction(center);
+    width: 100%;
+    padding: 0 .1rem;
+}
+.regOrforget p{
+    height: 100%;
+    @include flex(1);
+}
+.regOrforget a{
+    color: #666;
+    font-size: .14rem;
+}
+
