@@ -125,6 +125,24 @@
 	$('.regOrforget a:first-child').tap(function(){
 		window.location.href="./reg.html"
 	})
+	///gologin/api/users/signin
+
+	$('.gologin').tap(function(){
+		$.ajax({
+			type:"post",
+			url:"/yologin/api/users/signin",
+			async:true,
+			data:{
+				username:$('#username').val(),
+				password:$('#password').val()
+			},
+			success:function(data){
+				alert(data)
+			}
+		});
+		
+		
+	})
 
 
 /***/ }),
@@ -143,7 +161,7 @@
 /* 23 */
 /***/ (function(module, exports) {
 
-	module.exports = "<form action=\"\" method=\"post\" enctype=\"multipart/form-data\">	<div class=\"user\">		<label for=\"username\">账号</label><input type=\"text\" id=\"username\" placeholder=\"请输入您的用户名\" />	</div>	<div class=\"pwd\">		<label for=\"password\">密码</label><input type=\"text\" id=\"password\" placeholder=\"请输入密码\" />	</div>	<div class=\"sub\">		<input type=\"submit\" value=\"登陆\"/>	</div></form><div class=\"regOrforget\">	<a href=\"###\">快速注册</a>	<p></p>	<a href=\"###\">忘记密码？</a></div>"
+	module.exports = "<form method=\"post\" >	<div class=\"user\">		<label for=\"username\">账号</label><input type=\"text\" id=\"username\" placeholder=\"请输入您的用户名\" />	</div>	<div class=\"pwd\">		<label for=\"password\">密码</label><input type=\"text\" id=\"password\" placeholder=\"请输入密码\" />	</div>	<div class=\"sub\">		<input type=\"button\" value=\"登陆\" class=\"gologin\"/>	</div></form><div class=\"regOrforget\">	<a href=\"###\">快速注册</a>	<p></p>	<a href=\"###\">忘记密码？</a></div>"
 
 /***/ })
 /******/ ]);

@@ -14,3 +14,21 @@ $('.login-top').tap(function(){
 $('.regOrforget a:first-child').tap(function(){
 	window.location.href="./reg.html"
 })
+///gologin/api/users/signin
+
+$('.gologin').tap(function(){
+	$.ajax({
+		type:"post",
+		url:"/yologin/api/users/signin",
+		async:true,
+		data:{
+			username:$('#username').val(),
+			password:$('#password').val()
+		},
+		success:function(data){
+			alert(data)
+		}
+	});
+	
+	
+})

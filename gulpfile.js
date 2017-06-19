@@ -43,11 +43,19 @@ gulp.task('webserver', function () {
         			'^/api':''
         		}
         	}),
+        
         	proxy('/go',{
         		target:'http://m.autozi.com/goods',
         		changeOrigin:true,
         		pathRewrite:{
         			'^/go':''
+        		}
+        	}),
+        	 	proxy('/yologin',{
+        		target:'http://10.9.166.191:3000',
+        		changeOrigin:true,
+        		pathRewrite:{
+        			'^/yologin':''
         		}
         	})
         ]
