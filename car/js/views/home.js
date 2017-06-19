@@ -62,5 +62,7 @@ $('#top #search').tap(function(){
 	
 })
 
-
+$('#user').tap(function(){
+	window.location.href="/login.html";
+})
 	
